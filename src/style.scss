@@ -1,6 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 $theme-colors: (
   "primary": #7fabf9,
-  "secondary": #59ae86,
+  "success": #198754,
 );
+
+$navLineHeight: 50px;
+
+#navbar {
+  height: 84px;
+}
+
+.navbar-custom {
+  width: 75%;
+  margin: auto;
+
+  a {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    line-height: $navLineHeight;
+    padding: 0;
+    font-weight: 500;
+  }
+
+  button {
+    height: 44px;
+    margin-top: 3px;
+    padding: 0px 20px 0px 20px;
+    font-weight: 500;
+  }
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+  line-height: $navLineHeight;
+}
+
+.iconUser {
+  font-size: 30px;
+  line-height: $navLineHeight;
+}
+
+body {
+  height: 200vh;
+}
+
+.bg-img {
+  background-image: url("https://images.unsplash.com/photo-1508108712903-49b7ef9b1df8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1738&q=80");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  min-height: 75vh;
+}
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
