@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 $theme-colors: (
   "primary": #7fabf9,
+  "secondary": #6C757D,
   "success": #198754,
 );
 
@@ -17,7 +18,7 @@ $navLineHeight: 50px;
 
   a {
     color: black;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     line-height: $navLineHeight;
     padding: 0;
     font-weight: 500;
@@ -27,7 +28,6 @@ $navLineHeight: 50px;
     height: 44px;
     margin-top: 3px;
     padding: 0px 20px 0px 20px;
-    font-weight: 500;
   }
 }
 
@@ -51,8 +51,18 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
+  position: absolute;
   min-height: 75vh;
+  width: 100%;
+}
+
+.hero {
+  position: relative;
+  margin-top: 100px;
+}
+
+.flexbox {
+  height: 100%;
 }
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
