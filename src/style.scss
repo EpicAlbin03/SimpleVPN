@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 $theme-colors: (
-  "primary": #7fabf9,
+  "primary": #1879C0,
   "secondary": #6C757D,
-  "success": #198754,
+  "success": #0F866C,
 );
 
 $navLineHeight: 50px;
@@ -51,9 +51,14 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: absolute;
-  min-height: 75vh;
+  position: relative;
+  height: 75vh;
   width: 100%;
+}
+
+
+.flexbox {
+  height: 100%;
 }
 
 .hero {
@@ -61,8 +66,8 @@ body {
   margin-top: 100px;
 }
 
-.flexbox {
-  height: 100%;
+.hero2 {
+  margin-top: -251px;
 }
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
