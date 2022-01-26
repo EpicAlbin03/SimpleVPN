@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+a, p, button[type="button"] {
+  font-family: "Roboto", sans-serif;
+}
+
+button[type="button"] {
+  font-weight: 500;
+}
+
 #navbar {
   height: 84px;
 }
@@ -10,16 +18,15 @@
 
 .navbar-custom a {
   color: black;
-  font-family: "Roboto", sans-serif;
   line-height: 50px;
   padding: 0;
   font-weight: 500;
 }
 
 .navbar-custom button {
-  height: 44px;
-  margin-top: 3px;
-  padding: 0px 20px 0px 20px;
+  height: 45px;
+  width: 135px;
+  margin-top: 2.5px;
 }
 
 .logo {
@@ -33,10 +40,6 @@
   line-height: 50px;
 }
 
-body {
-  height: 200vh;
-}
-
 .bg-img {
   background-image: url("https://images.unsplash.com/photo-1508108712903-49b7ef9b1df8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1738&q=80");
   background-position: center;
@@ -47,17 +50,25 @@ body {
   width: 100%;
 }
 
-.flexbox {
-  height: 100%;
-}
-
 .hero {
-  position: relative;
-  margin-top: 100px;
+  margin-top: calc(37.5vh - 174px);
 }
 
-.hero2 {
-  margin-top: -251px;
+.hero h1, .hero .h1 {
+  font-size: 60px;
+}
+
+.hero p {
+  font-size: 1.5rem;
+}
+
+.hero button {
+  height: 60px;
+  width: 180px;
+}
+
+.footerCon {
+  background-color: #151922;
 }
 
 /*!
