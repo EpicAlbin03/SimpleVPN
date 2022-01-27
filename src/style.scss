@@ -6,6 +6,9 @@ $theme-colors: (
   "success": #0F866C,
 );
 
+$primary: #1879C0;
+$secondary: #6C757D;
+$success: #0F866C;
 $navLineHeight: 50px;
 
 a, p, button[type="button"] {
@@ -22,7 +25,6 @@ button[type="button"] {
 
 .navbar-custom {
   width: 75%;
-  margin: auto;
 
   a {
     color: black;
@@ -36,16 +38,16 @@ button[type="button"] {
     width: 135px;
     margin-top: 2.5px;
   }
+
+  .bi {
+    font-size: 30px;
+    line-height: $navLineHeight;
+  }
 }
 
 .logo {
   height: 50px;
   width: 50px;
-  line-height: $navLineHeight;
-}
-
-.iconUser {
-  font-size: 30px;
   line-height: $navLineHeight;
 }
 
@@ -78,11 +80,46 @@ button[type="button"] {
 
 .footerCon {
   background-color: #151922;
+  font-size: 0.9rem;
 
-  // .row {
-  //   width: fit-content;
-  //   margin: auto;
-  // }
+  .row, .border-top {
+    width: 75vw;
+    margin: auto;
+  }
+
+  li:hover {
+    text-decoration: underline;
+  }
+
+  .bi {
+    color: white;
+  }
+
+  p {
+    font-size: small;
+  }
 }
+
+// X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and down)
+@media (max-width: 576px) {}
+
+// Medium devices (tablets, 768px and down)
+@media (max-width: 768px) {
+  .navbar-custom {
+    background-color: red;
+  }
+}
+
+// Large devices (desktops, 992px and down)
+@media (max-width: 992px) {}
+
+// X-Large devices (large desktops, 1200px and down)
+@media (max-width: 1200px) {}
+
+// XX-Large devices (larger desktops, 1400px and down)
+@media (max-width: 1400px) {}
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
