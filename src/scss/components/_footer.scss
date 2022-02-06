@@ -1,0 +1,56 @@
+.footerCon {
+  background-color: #151922;
+  font-size: 0.9rem;
+
+  .row,
+  .border-top {
+    width: 75vw;
+    margin: auto;
+  }
+
+  li:hover {
+    text-decoration: underline;
+  }
+
+  .bi {
+    color: white;
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: small;
+  }
+}
+
+// breakpoints start
+@media (max-width: 1400px) {
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 768px) {
+  .footerCon {
+    .row {
+      flex-direction: column;
+    }
+
+    .col-2 {
+      width: 200%;
+
+      ul {
+        margin-bottom: 20px;
+      }
+    }
+
+    .footerBottom {
+      flex-direction: column;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+}
