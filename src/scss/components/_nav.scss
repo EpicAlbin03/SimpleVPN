@@ -17,7 +17,7 @@ $marginNav: 84px;
     font-weight: 500;
 
     &:hover {
-      color: $success;
+      color: black;
     }
   }
 
@@ -25,7 +25,7 @@ $marginNav: 84px;
     color: inherit;
   }
 
-  a[role="button"] {
+  .btn {
     height: 45px;
     padding: 0;
     line-height: 45px;
@@ -33,11 +33,29 @@ $marginNav: 84px;
 
   .bi {
     font-size: 30px;
-    line-height: $navLineHeight;
   }
 
   .list {
     display: none;
+  }
+
+  .dropdown {
+    position: static;
+  }
+
+  .dropdown-menu {
+    width: 100%;
+    border-radius: 0px;
+    height: 100vh;
+
+    a:hover {
+      color: black;
+    }
+
+    .menuSignIn,
+    .menuPricing {
+      display: none;
+    }
   }
 }
 
@@ -78,8 +96,15 @@ $marginNav: 84px;
 @media (max-width: 576px) {
   .customNav {
     .user,
-    a[role="button"] {
+    .btn {
       display: none;
+    }
+
+    .dropdown-menu {
+      .menuSignIn,
+      .menuPricing {
+        display: block;
+      }
     }
   }
 }

@@ -10671,21 +10671,35 @@ textarea.form-control-lg {
   font-weight: 500;
 }
 .customNav a:hover {
-  color: #0f866c;
+  color: black;
 }
 .customNav .navbar-brand:hover {
   color: inherit;
 }
-.customNav a[role=button] {
+.customNav .btn {
   height: 45px;
   padding: 0;
   line-height: 45px;
 }
 .customNav .bi {
   font-size: 30px;
-  line-height: 50px;
 }
 .customNav .list {
+  display: none;
+}
+.customNav .dropdown {
+  position: static;
+}
+.customNav .dropdown-menu {
+  width: 100%;
+  border-radius: 0px;
+  height: 100vh;
+}
+.customNav .dropdown-menu a:hover {
+  color: black;
+}
+.customNav .dropdown-menu .menuSignIn,
+.customNav .dropdown-menu .menuPricing {
   display: none;
 }
 
@@ -10715,8 +10729,12 @@ textarea.form-control-lg {
 }
 @media (max-width: 576px) {
   .customNav .user,
-.customNav a[role=button] {
+.customNav .btn {
     display: none;
+  }
+  .customNav .dropdown-menu .menuSignIn,
+.customNav .dropdown-menu .menuPricing {
+    display: block;
   }
 }
 .bg-img {
@@ -10744,7 +10762,7 @@ textarea.form-control-lg {
   font-size: 1.5rem;
   font-weight: 500;
 }
-.hero a[role=button] {
+.hero .btn {
   height: 60px;
   width: 180px;
   padding: 0;
@@ -10763,7 +10781,7 @@ textarea.form-control-lg {
   .hero p {
     font-size: 1.3rem;
   }
-  .hero a[role=button] {
+  .hero .btn {
     height: 50px;
     width: 150px;
     font-size: 1rem;
