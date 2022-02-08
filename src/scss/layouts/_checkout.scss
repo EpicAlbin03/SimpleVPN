@@ -1,0 +1,14 @@
+@use "../components/" as *;
+
+.bgCon {
+    margin-top: $marginNav * 2;
+
+    .emailForm {
+        padding-top: 6px;
+    }
+
+    .plan {
+        font-size: small;
+        margin-left: 37px;
+    }
+}

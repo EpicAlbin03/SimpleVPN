@@ -10737,6 +10737,17 @@ textarea.form-control-lg {
     display: block;
   }
 }
+.bgCon {
+  margin-top: 168px;
+}
+.bgCon .emailForm {
+  padding-top: 6px;
+}
+.bgCon .plan {
+  font-size: small;
+  margin-left: 37px;
+}
+
 .bg-img {
   background-image: url("https://images.unsplash.com/photo-1508108712903-49b7ef9b1df8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1738&q=80");
   background-position: center;
