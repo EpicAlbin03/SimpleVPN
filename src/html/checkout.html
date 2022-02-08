@@ -26,9 +26,9 @@
 
     <main class="container bgCon">
       <div class="row g-5">
-        <div class="col-md-5 col-lg-4 order-md-last">
+        <div class="col-lg-5 order-md-last">
           <h4 class="d-flex justify-content-between align-items-center mb-3 fs-5">Order Summary</h4>
-          <form class="card p-2">
+          <form class="card p-3">
             <a class="navbar-brand fw-bold text-black fs-6" href="./home.html">
               <img src="../images/logo-32x32.png" alt="SimpleVPN logo" />
               SimpleVPN
@@ -48,8 +48,8 @@
             <hr>
 
             <div class="my-3">
-              <div class="float-start ps-2 fw-bold">Total</div>
-              <div class="float-end pe-2 fw-bold">$10</div>
+              <div class="float-start ps-2 fw-bold fs-5">Total</div>
+              <div class="float-end pe-2 fw-bold fs-5">$10</div>
             </div>
 
             <div class="input-group my-3">
@@ -58,17 +58,22 @@
           </form>
         </div>
 
-        <div class="col-md-7 col-lg-8">
+        <div class="col-lg-7">
           <form class="needs-validation emailForm" novalidate>
             <div class="row g-3">
               <div class="col-sm-6">
-                <label for="email" class="form-label">Enter email adress or <a class="text-decoration-none" href="./signIn.html">login</a></label>
+                <label for="email" class="form-label">Enter email adress or <a href="./signIn.html">login</a></label>
                 <input type="text" class="form-control" id="email" placeholder="name@example.com" value="" required />
                 <div class="invalid-feedback">Valid first name is required.</div>
               </div>
             </div>
 
-            <!-- <button class="w-100 btn btn-primary btn-lg" type="submit">Continue to checkout</button> -->
+            <h4 class="mt-5">Select a payment method</h4>
+
+            <button class="w-100 btn border-secondary mt-3" type="button">
+              <div class="float-start">Credit or debit card</div>
+              <i class="bi bi-chevron-down float-end"></i>
+            </button>
           </form>
         </div>
       </div>

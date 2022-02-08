@@ -11,4 +11,14 @@
         font-size: small;
         margin-left: 37px;
     }
+
+    label[for="email"] {
+        a {
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
 }
