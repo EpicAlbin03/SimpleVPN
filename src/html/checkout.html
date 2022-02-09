@@ -36,16 +36,16 @@
             <p class="text-muted plan">12-month plan ($10/mo)</p>
 
             <div class="my-3">
-              <label for="country" class="form-label">Country</label>
+              <label for="country" class="form-label">COUNTRY</label>
               <select class="form-select" id="country" required>
-                <option value="">Choose...</option>
+                <option>Choose...</option>
                 <option>Sweden</option>
                 <option>US</option>
                 <option>UK</option>
               </select>
               <div class="invalid-feedback">Please select a valid country.</div>
             </div>
-            <hr>
+            <hr />
 
             <div class="my-3">
               <div class="float-start ps-2 fw-bold fs-5">Total</div>
@@ -63,17 +63,83 @@
             <div class="row g-3">
               <div class="col-sm-6">
                 <label for="email" class="form-label">Enter email adress or <a href="./signIn.html">login</a></label>
-                <input type="text" class="form-control" id="email" placeholder="name@example.com" value="" required />
+                <input type="text" class="form-control" id="email" placeholder="name@example.com" required />
                 <div class="invalid-feedback">Valid first name is required.</div>
               </div>
             </div>
 
             <h4 class="mt-5">Select a payment method</h4>
 
-            <button class="w-100 btn border-secondary mt-3" type="button">
-              <div class="float-start">Credit or debit card</div>
-              <i class="bi bi-chevron-down float-end"></i>
-            </button>
+            <div class="dropdown">
+              <button
+                class="w-100 btn border-secondary mt-3"
+                type="button"
+                id="creditDropdown"
+                data-bs-toggle="dropdown"
+                data-bs-auto-close="false"
+                aria-expanded="false"
+              >
+                <div class="float-start">Credit or debit card</div>
+                <i class="bi bi-chevron-right float-end"></i>
+              </button>
+              <div class="dropdown-menu w-100" aria-labelledby="creditDropdown">
+                <form class="dropdown-item p-4">
+                  <div class="p-3 d-flex">
+                    <div class="w-50 pe-2">
+                      <label for="firstName" class="form-label">FIRST NAME</label>
+                      <input class="form-control" id="firstName" />
+                    </div>
+                    <div class="w-50 ps-2">
+                      <label for="lastName" class="form-label">LAST NAME</label>
+                      <input class="form-control" id="lastName" />
+                    </div>
+                  </div>
+
+                  <div class="p-3">
+                    <label for="creditCard" class="form-label">CREDIT CARD NUMBER</label>
+                    <input type="number" class="form-control" id="creditCard" />
+                  </div>
+
+                  <div class="p-3 d-flex">
+                    <div class="w-25 pe-2">
+                      <label for="month" class="form-label">EXPIRY DATE</label>
+                      <select class="form-select" id="month" required>
+                        <option>Month</option>
+                        <option>01</option>
+                        <option>02</option>
+                        <option>03</option>
+                        <option>04</option>
+                        <option>05</option>
+                        <option>06</option>
+                        <option>07</option>
+                        <option>08</option>
+                        <option>09</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                      </select>
+                    </div>
+                    <div class="w-25 px-2 year">
+                      <select class="form-select" id="year" required>
+                        <option>Year</option>
+                        <option>2022</option>
+                        <option>2023</option>
+                        <option>2024</option>
+                      </select>
+                    </div>
+                    <div class="w-25 px-2">
+                      <label for="cvc" class="form-label">CVC</label>
+                      <input type="number" class="form-control" id="cvc" />
+                    </div>
+                    <div class="w-25 ps-2">
+                      <label for="zip" class="form-label">ZIP/POSTAL CODE</label>
+                      <input type="number" class="form-control" id="zip" />
+                    </div>
+                  </div>
+                  <!-- <button type="submit" class="btn btn-primary">Join Now</button> -->
+                </form>
+              </div>
+            </div>
           </form>
         </div>
       </div>
