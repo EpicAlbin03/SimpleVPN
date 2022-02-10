@@ -1,35 +1,42 @@
 @use "../components/" as *;
 
 .bgCon {
-    margin-top: $marginNav * 2;
+  margin-top: $marginNav * 2;
 
-    .emailForm {
-        padding-top: 6px;
+  .emailForm {
+    padding-top: 6px;
+  }
+
+  .plan {
+    font-size: small;
+    margin-left: 37px;
+  }
+
+  label[for="email"] {
+    a {
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
+  }
 
-    .plan {
-        font-size: small;
-        margin-left: 37px;
+  label {
+    font-size: small;
+    font-weight: 500;
+  }
+
+  .dropdown {
+    .btnDropdown.active.focus,
+    .btnDropdown.active:focus,
+    .btnDropdown.focus,
+    .btnDropdown:active.focus,
+    .btnDropdown:active:focus,
+    .btnDropdown:focus {
+      outline: none;
+      box-shadow: none;
+      background-color: white;
     }
-
-    label[for="email"] {
-        a {
-            text-decoration: none;
-
-            &:hover {
-                text-decoration: underline;
-            }
-        }
-    }
-
-    label {
-        font-size: small;
-        font-weight: 500;
-    }
-
-    .dropdown-menu {
-        .year {
-            padding-top: 31px;
-        }
-    }
+  }
 }

@@ -7,7 +7,8 @@ button {
 }
 
 a[role=button],
-button {
+button,
+button[type=submit] {
   font-weight: 500;
 }
 
@@ -10771,8 +10772,15 @@ textarea.form-control-lg {
   font-size: small;
   font-weight: 500;
 }
-.bgCon .dropdown-menu .year {
-  padding-top: 31px;
+.bgCon .dropdown .btnDropdown.active.focus,
+.bgCon .dropdown .btnDropdown.active:focus,
+.bgCon .dropdown .btnDropdown.focus,
+.bgCon .dropdown .btnDropdown:active.focus,
+.bgCon .dropdown .btnDropdown:active:focus,
+.bgCon .dropdown .btnDropdown:focus {
+  outline: none;
+  box-shadow: none;
+  background-color: white;
 }
 
 .bg-img {
