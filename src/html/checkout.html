@@ -29,7 +29,7 @@
         <div class="col-lg-5 order-md-last">
           <h4 class="d-flex justify-content-between align-items-center mb-3 fs-5">Order Summary</h4>
           <form class="card p-3">
-            <a class="navbar-brand fw-bold text-black fs-6" href="./home.html">
+            <a class="navbar-brand fw-bold text-black fs-6">
               <img src="../images/logo-32x32.png" alt="SimpleVPN logo" />
               SimpleVPN
             </a>
@@ -71,16 +71,9 @@
             <h4 class="mt-5">Select a payment method</h4>
 
             <div class="dropdown">
-              <button
-                class="w-100 btn border-secondary mt-3 btnDropdown"
-                type="button"
-                id="creditDropdown"
-                data-bs-toggle="dropdown"
-                data-bs-auto-close="false"
-                aria-expanded="false"
-              >
-                <div class="float-start">Credit or debit card</div>
-                <i class="bi bi-chevron-right float-end"></i>
+              <button class="w-100 btn border-secondary mt-3 btnDropdown" type="button" id="creditDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="float-start fs-5">Credit or debit card</div>
+                <i class="bi bi-chevron-right float-end fs-5"></i>
               </button>
               <div class="dropdown-menu w-100" aria-labelledby="creditDropdown">
                 <form class="dropdown-item p-4">
@@ -114,30 +107,50 @@
                       <input type="number" class="form-control" id="zip" />
                     </div>
                   </div>
-                  <button type="submit" class="btn btn-primary ms-3">Join Now</button>
+                  <button type="submit" class="btn btn-primary ms-3 mb-2 w-40">Join Now</button>
                 </form>
               </div>
             </div>
 
             <div class="dropdown">
-              <button
-                class="w-100 btn border-secondary mt-3 btnDropdown"
-                type="button"
-                id="creditDropdown"
-                data-bs-toggle="dropdown"
-                data-bs-auto-close="false"
-                aria-expanded="false"
-              >
-                <div class="float-start">Paypal</div>
-                <i class="bi bi-chevron-right float-end"></i>
+              <button class="w-100 btn border-secondary mt-3 btnDropdown" type="button" id="paypalDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="float-start fs-5">Paypal</div>
+                <i class="bi bi-chevron-right float-end fs-5"></i>
               </button>
-              <div class="dropdown-menu w-100" aria-labelledby="creditDropdown">
+              <div class="dropdown-menu w-100" aria-labelledby="paypalDropdown">
                 <form class="p-4 d-flex flex-column">
                   <label class="form-label">CONTINUE BELOW TO BUY A VPN SUBSCRIPTION WITH PAYPAL</label>
-                  <button type="submit" class="btn btn-primary w-25">Continue to PayPal</button>
+                  <button type="submit" class="btn btn-primary mt-2 w-40">Continue to PayPal</button>
                 </form>
               </div>
             </div>
+
+            <div class="dropdown">
+              <button class="w-100 btn border-secondary mt-3 btnDropdown" type="button" id="btcDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="float-start fs-5">Bitcoin</div>
+                <i class="bi bi-chevron-right float-end fs-5"></i>
+              </button>
+              <div class="dropdown-menu w-100" aria-labelledby="btcDropdown">
+                <form class="p-4 d-flex flex-column">
+                  <label class="form-label">CONTINUE BELOW TO BUY A VPN SUBSCRIPTION WITH BITCOIN</label>
+                  <button type="submit" class="btn btn-primary mt-2 w-40">Continue to BitPay</button>
+                </form>
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <button class="w-100 btn border-secondary mt-3 btnDropdown" type="button" id="wallDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="float-start fs-5">Other</div>
+                <i class="bi bi-chevron-right float-end fs-5"></i>
+              </button>
+              <div class="dropdown-menu w-100" aria-labelledby="wallDropdown">
+                <form class="p-4 d-flex flex-column">
+                  <label class="form-label">CONTINUE BELOW TO BUY A VPN SUBSCRIPTION WITH PAYMENTWALL</label>
+                  <button type="submit" class="btn btn-primary mt-2 w-40">Continue to Paymentwall</button>
+                </form>
+              </div>
+            </div>
+
           </form>
         </div>
       </div>
