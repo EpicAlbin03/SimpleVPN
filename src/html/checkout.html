@@ -12,7 +12,7 @@
   </head>
   <body>
     <!-- navbar start -->
-    <nav class="navbar navbar-expand fixed-top" id="navbar">
+    <nav class="navbar navbar-expand" id="navbar">
       <div class="container-fluid">
         <div class="navbar-nav customNav m-auto">
           <a class="navbar-brand fw-bold" href="./home.html">
@@ -25,135 +25,221 @@
     <!-- navbar end -->
 
     <main class="container bgCon">
-      <div class="row g-5">
+      <form class="row g-5 needs-validation" novalidate>
+        <!-- order summary start -->
         <div class="col-lg-5 order-md-last">
           <h4 class="d-flex justify-content-between align-items-center mb-3 fs-5">Order Summary</h4>
-          <form class="card p-3">
+          <div class="card p-3">
             <a class="navbar-brand fw-bold text-black fs-6">
               <img src="../images/logo-32x32.png" alt="SimpleVPN logo" />
               SimpleVPN
             </a>
-            <p class="text-muted plan">12-month plan ($10/mo)</p>
+            <p class="text-muted plan" id="plan">12-month plan ($7.99/mo)</p>
 
             <div class="my-3">
               <label for="country" class="form-label">COUNTRY</label>
-              <select class="form-select" id="country" required>
+              <select class="form-select" id="country" aria-describedby="invalidCountry" required>
                 <option>Choose...</option>
                 <option>Sweden</option>
                 <option>US</option>
                 <option>UK</option>
               </select>
-              <div class="invalid-feedback">Please select a valid country.</div>
+              <div class="invalid-feedback text-danger" id="invalidCountry">Please select a valid country</div>
             </div>
             <hr />
 
             <div class="my-3">
               <div class="float-start ps-2 fw-bold fs-5">Total</div>
-              <div class="float-end pe-2 fw-bold fs-5">$10</div>
+              <div class="float-end pe-2 fw-bold fs-5" id="total">$7.99</div>
             </div>
 
             <div class="input-group my-3">
               <input type="text" class="form-control" placeholder="Promo code" />
             </div>
-          </form>
+          </div>
         </div>
+        <!-- order summary end -->
 
         <div class="col-lg-7">
-          <form class="needs-validation emailForm" novalidate>
+          <div id="leftSide">
+            <!-- email start -->
             <div class="row g-3">
-              <div class="col-sm-6">
+              <div class="col-sm-6 w-100">
                 <label for="email" class="form-label">Enter email adress or <a href="./signIn.html">login</a></label>
-                <input type="text" class="form-control" id="email" placeholder="name@example.com" required />
-                <div class="invalid-feedback">Valid first name is required.</div>
+                <input type="email" class="form-control" id="email" placeholder="name@example.com" aria-describedby="invalidEmail" required />
+                <div class="invalid-feedback text-danger" id="invalidEmail">Enter email</div>
               </div>
             </div>
+            <!-- email end -->
 
+            <!-- payment method start -->
             <h4 class="mt-5">Select a payment method</h4>
 
             <div class="dropdown">
-              <button class="w-100 btn border-secondary mt-3 btnDropdown" type="button" id="creditDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+              <button
+                class="w-100 btn border-secondary mt-3 btnDropdown"
+                type="button"
+                id="creditDropdown"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                data-bs-display="static"
+                data-bs-auto-close="false"
+              >
                 <div class="float-start fs-5">Credit or debit card</div>
                 <i class="bi bi-chevron-right float-end fs-5"></i>
               </button>
-              <div class="dropdown-menu w-100" aria-labelledby="creditDropdown">
-                <form class="dropdown-item p-4">
+              <div class="dropdown-menu w-100 position-relative" aria-labelledby="creditDropdown">
+                <div>
                   <div class="p-3 d-flex">
                     <div class="w-50 pe-2">
                       <label for="firstName" class="form-label">FIRST NAME</label>
-                      <input class="form-control" id="firstName" />
+                      <input class="form-control" id="firstName" aria-describedby="invalidFirstName" required />
+                      <div class="invalid-feedback text-danger" id="invalidFirstName">Enter first name</div>
                     </div>
                     <div class="w-50 ps-2">
                       <label for="lastName" class="form-label">LAST NAME</label>
-                      <input class="form-control" id="lastName" />
+                      <input class="form-control" id="lastName" aria-describedby="invalidLastName" required />
+                      <div class="invalid-feedback text-danger" id="invalidLastName">Enter last name</div>
                     </div>
                   </div>
 
-                  <div class="p-3">
+                  <div class="p-3 creditDiv">
                     <label for="creditCard" class="form-label">CREDIT CARD NUMBER</label>
-                    <input type="number" class="form-control" id="creditCard" />
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="creditCard"
+                      placeholder="0000 0000 0000 0000"
+                      aria-describedby="invalidCreditCard"
+                      oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                      maxlength="19"
+                      required
+                    />
+                    <div class="invalid-feedback text-danger" id="invalidCreditCard">Enter a credit card number</div>
                   </div>
 
                   <div class="p-3 d-flex">
                     <div class="w-25 pe-2">
                       <label for="expiryDate" class="form-label">EXPIRY DATE</label>
-                      <input type="number" class="form-control" id="expiryDate" />
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="expiryDate"
+                        placeholder="MM / YY"
+                        aria-describedby="invalidExpiryDate"
+                        oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                        maxlength="7"
+                        required
+                      />
+                      <div class="invalid-feedback text-danger" id="invalidExpiryDate">Enter expiry date</div>
                     </div>
                     <div class="w-25 px-2">
                       <label for="cvc" class="form-label">CVC</label>
-                      <input type="number" class="form-control" id="cvc" />
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="cvc"
+                        placeholder="000"
+                        aria-describedby="invalidCVC"
+                        oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                        maxlength="4"
+                        required
+                      />
+                      <div class="invalid-feedback text-danger" id="invalidCVC">Enter CVC</div>
                     </div>
-                    <div class="w-25 ps-2">
-                      <label for="zip" class="form-label">ZIP/POSTAL CODE</label>
-                      <input type="number" class="form-control" id="zip" />
+                    <div class="w-50 ps-2">
+                      <label for="zip" class="form-label">
+                        <span>ZIP / POSTAL CODE</span>
+                        <span class="text-muted"> (optional)</span></label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="zip"
+                        oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                        maxlength="5"
+                      />
+                      <div class="invalid-feedback text-danger" id="invalidZip">Invalid ZIP / postal dode</div>
                     </div>
                   </div>
-                  <button type="submit" class="btn btn-primary ms-3 mb-2 w-40">Join Now</button>
-                </form>
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-start p-3">
+                    <button type="submit" class="btn btn-primary px-4 me-md-2 text-white" id="btnSubmit">Join Now</button>
+                  </div>
+                </div>
               </div>
             </div>
 
             <div class="dropdown">
-              <button class="w-100 btn border-secondary mt-3 btnDropdown" type="button" id="paypalDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+              <button
+                class="w-100 btn border-secondary mt-3 btnDropdown"
+                type="button"
+                id="paypalDropdown"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                data-bs-display="static"
+                data-bs-auto-close="false"
+              >
                 <div class="float-start fs-5">Paypal</div>
                 <i class="bi bi-chevron-right float-end fs-5"></i>
               </button>
-              <div class="dropdown-menu w-100" aria-labelledby="paypalDropdown">
-                <form class="p-4 d-flex flex-column">
-                  <label class="form-label">CONTINUE BELOW TO BUY A VPN SUBSCRIPTION WITH PAYPAL</label>
-                  <button type="submit" class="btn btn-primary mt-2 w-40">Continue to PayPal</button>
-                </form>
+              <div class="dropdown-menu w-100 position-relative" aria-labelledby="paypalDropdown">
+                <div class="p-3 d-flex flex-column">
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <label class="form-label">CONTINUE BELOW TO BUY A VPN SUBSCRIPTION WITH PAYPAL</label>
+                    <a role="button" class="btn btn-primary px-4 me-md-2 text-white" href="#">Continue to PayPal</a>
+                  </div>
+                </div>
               </div>
             </div>
 
             <div class="dropdown">
-              <button class="w-100 btn border-secondary mt-3 btnDropdown" type="button" id="btcDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+              <button
+                class="w-100 btn border-secondary mt-3 btnDropdown"
+                type="button"
+                id="btcDropdown"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                data-bs-display="static"
+                data-bs-auto-close="false"
+              >
                 <div class="float-start fs-5">Bitcoin</div>
                 <i class="bi bi-chevron-right float-end fs-5"></i>
               </button>
-              <div class="dropdown-menu w-100" aria-labelledby="btcDropdown">
-                <form class="p-4 d-flex flex-column">
-                  <label class="form-label">CONTINUE BELOW TO BUY A VPN SUBSCRIPTION WITH BITCOIN</label>
-                  <button type="submit" class="btn btn-primary mt-2 w-40">Continue to BitPay</button>
-                </form>
+              <div class="dropdown-menu w-100 position-relative" aria-labelledby="btcDropdown">
+                <div class="p-3 d-flex flex-column">
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <label class="form-label">CONTINUE BELOW TO BUY A VPN SUBSCRIPTION WITH BITCOIN</label>
+                    <a role="button" class="btn btn-primary px-4 me-md-2 text-white" href="#">Continue to BitPay</a>
+                  </div>
+                </div>
               </div>
             </div>
 
             <div class="dropdown">
-              <button class="w-100 btn border-secondary mt-3 btnDropdown" type="button" id="wallDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+              <button
+                class="w-100 btn border-secondary mt-3 btnDropdown"
+                type="button"
+                id="wallDropdown"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                data-bs-display="static"
+                data-bs-auto-close="false"
+              >
                 <div class="float-start fs-5">Other</div>
                 <i class="bi bi-chevron-right float-end fs-5"></i>
               </button>
-              <div class="dropdown-menu w-100" aria-labelledby="wallDropdown">
-                <form class="p-4 d-flex flex-column">
-                  <label class="form-label">CONTINUE BELOW TO BUY A VPN SUBSCRIPTION WITH PAYMENTWALL</label>
-                  <button type="submit" class="btn btn-primary mt-2 w-40">Continue to Paymentwall</button>
-                </form>
+              <div class="dropdown-menu w-100 position-relative" aria-labelledby="wallDropdown">
+                <div class="p-3 d-flex flex-column">
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <label class="form-label">CONTINUE BELOW TO BUY A VPN SUBSCRIPTION WITH PAYMENTWALL</label>
+                    <a role="button" class="btn btn-primary px-4 me-md-2 text-white" href="#">Continue to Paymentwall</a>
+                  </div>
+                </div>
               </div>
             </div>
-
-          </form>
+          </div>
         </div>
-      </div>
+        <!-- payment method end -->
+      </form>
     </main>
 
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

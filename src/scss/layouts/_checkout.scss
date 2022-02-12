@@ -1,10 +1,11 @@
 @use "../components/" as *;
 
 .bgCon {
-  margin-top: $marginNav * 2;
+  margin-top: $marginNav;
+  overflow-x: hidden;
 
-  .emailForm {
-    padding-top: 6px;
+  #leftSide {
+    padding-top: 8px;
   }
 
   .plan {
@@ -38,9 +39,43 @@
       box-shadow: none;
       background-color: white;
     }
+  }
+}
 
-    .w-40 {
-      width: 40%;
+// breakpoints start
+@media (max-width: 1400px) {
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 992px) {
+  .bgCon {
+    height: 1076px;
+    margin-top: $marginNav / 2;
+  }
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 576px) {
+  .bgCon {
+    .dropdown-menu {
+      div {
+        padding: 10px !important;
+        width: 100% !important;
+      }
+
+      .creditDiv, .d-grid {
+        padding: 0 !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+      }
+
+      .d-flex {
+        flex-direction: column;
+      }
     }
   }
 }

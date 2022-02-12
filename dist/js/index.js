@@ -2,7 +2,7 @@
 const nav = document.getElementById("navbar");
 // Change background of nav to white when user scrolls for the first time
 window.addEventListener("scroll", () => {
-    if (window.scrollY == 0) {
+    if (window.scrollY === 0) {
         nav.style.backgroundColor = "";
     }
     else {
@@ -10,7 +10,7 @@ window.addEventListener("scroll", () => {
     }
 });
 document.getElementById("navDropdown")?.addEventListener("click", () => {
-    if (nav.style.backgroundColor == "white") {
+    if (nav.style.backgroundColor === "white") {
         nav.style.backgroundColor = "";
         document.body.style.overflowY = "";
     }
