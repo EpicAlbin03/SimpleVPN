@@ -5,12 +5,221 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SimpleVPN - Support Center</title>
-    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="/dist/css/style.css" />
     <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css" />
     <link rel="shortcut icon" href="../images/logo-16x16.png" type="image/x-icon" />
   </head>
   <body>
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand fixed-top" id="navbar">
+      <div class="container-fluid">
+        <div class="navbar-nav customNav m-auto">
+          <a class="navbar-brand fw-bold" href="./home.html">
+            <img src="../images/logo-48x48.png" alt="SimpleVPN logo" />
+            SimpleVPN
+          </a>
+          <div class="conatiner d-flex ms-auto">
+            <a class="nav-link me-2 navHide" href="./pricing.html">Pricing</a>
+            <a class="nav-link me-2 navHide" href="./whatIsVPN.html">What is a VPN?</a>
+            <a class="nav-link me-2 navHide" href="./referFriend.html">Refer a Friend</a>
+            <a class="nav-link me-3 navHide" href="./blog.html">Blog</a>
+            <a role="button" class="btn btn-success text-white me-3 px-3" href="./pricing.html">Get Started</a>
+            <a class="nav-link me-2 navHide" href="./supportCenter.html">Help</a>
+            <a class="nav-link user" href="./signIn.html">
+              <i class="bi bi-person-circle"></i>
+            </a>
+
+            <div class="nav-item dropdown">
+              <a class="nav-link ms-2 list" id="navDropdown" role="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+                <i class="bi bi-list"></i>
+              </a>
+              <ul class="dropdown-menu border-0 mt-0" aria-labelledby="navDropdown">
+                <li><a class="dropdown-item ps-3" href="./pricing.html">Pricing</a></li>
+                <li><a class="dropdown-item ps-3" href="./whatIsVPN.html">What is a VPN?</a></li>
+                <li><a class="dropdown-item ps-3" href="./referFriend.html">Refer a Friend</a></li>
+                <li><a class="dropdown-item ps-3" href="./blog.html">Blog</a></li>
+                <li><a class="dropdown-item ps-3" href="./supportCenter.html">Support Center</a></li>
+                <li><a class="dropdown-item ps-3 menuSignIn" href="./signIn.html">Sign In</a></li>
+                <li class="d-grid gap-2 d-md-flex justify-content-md-start">
+                  <a role="button" class="btn btn-success text-white px-3 mx-2 mt-2 menuPricing" href="./pricing.html">Get Started</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+    <main class="bg-primary supportMain">
+      <!-- search-bar start -->
+      <div class="container searchCon pt-3 pb-5">
+        <div class="row d-flex justify-content-center align-items-center">
+          <div class="col-md-6">
+            <label for="searchBar" class="text-white w-100 mb-3">
+              <h1 class="mx-auto">How can we help you?</h1>
+            </label>
+            <div class="form" id="searchBar">
+              <i class="bi bi-search"></i>
+              <input type="text" class="form-control form-input" placeholder="Search anything..." />
+              <span class="left-pan">
+                <i class="bi bi-mic-fill"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- search-bar end -->
+
+      <!-- bubbles start -->
+      <div class="container bubbleCon mt-5">
+        <div class="mt-5 pt-5 d-flex row justify-content-center align-items-center">
+          <div class="col">
+            <div class="bubbleDiv">
+              <a class="bubble bg-white position-relative" href="#">
+                <i class="bi bi-tools text-black position-absolute"></i>
+              </a>
+            </div>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-center ps-2 mt-4">
+              <a role="button" class="btn btn-outline-light btn-lg px-4 me-md-2 text-white border-2 border-white rounded-pill" href="#">Troubleshoot</a>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="bubbleDiv">
+              <a class="bubble bg-white position-relative" href="#">
+                <i class="bi bi-chat text-black position-absolute"></i>
+              </a>
+            </div>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-center ps-2 mt-4">
+              <a role="button" class="btn btn-outline-light btn-lg px-4 me-md-2 text-white border-2 border-white rounded-pill" href="./contactUs.html">Contact Us</a>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="bubbleDiv">
+              <a class="bubble bg-white position-relative" href="#">
+                <i class="bi bi-book text-black position-absolute"></i>
+              </a>
+            </div>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-center ps-2 mt-4">
+              <a role="button" class="btn btn-outline-light btn-lg px-4 me-md-2 text-white border-2 border-white rounded-pill" href="#">Instructions</a>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="bubbleDiv">
+              <a class="bubble bg-white position-relative" href="#">
+                <i class="bi bi-question-lg text-black position-absolute"></i>
+              </a>
+            </div>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-center ps-2 mt-4">
+              <a role="button" class="btn btn-outline-light btn-lg px-4 me-md-2 text-white border-2 border-white rounded-pill" href="#">FAQ</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- bubbles end -->
+    </main>
+
+    <!-- footer start -->
+    <!-- <div class="container-fluid footerCon text-white-50">
+      <footer class="py-5">
+        <div class="row justify-content-center">
+          <div class="col-2">
+            <h6>SIMPLE VPN</h6>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">About Us</a></li>
+              <li class="nav-item mb-2"><a href="./pricing.html" class="nav-link p-0 text-white">Plans & Pricing</a></li>
+              <li class="nav-item mb-2"><a href="./home.html" class="nav-link p-0 text-white">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Careers</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Free Trial</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Routers</a></li>
+              <li class="nav-item mb-2"><a href="./referFriend.html" class="nav-link p-0 text-white">Refer a Friend</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Become a Partner</a></li>
+            </ul>
+          </div>
+
+          <div class="col-2">
+            <h6>VPN APPS</h6>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Windows</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">macOS</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">iOS</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Linux</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Chrome</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Firefox</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Edge</a></li>
+            </ul>
+          </div>
+
+          <div class="col-2">
+            <h6>LEARN MORE</h6>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Reviews</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Press</a></li>
+              <li class="nav-item mb-2"><a href="./blog.html" class="nav-link p-0 text-white">Blog</a></li>
+              <li class="nav-item mb-2"><a href="./whatIsVPN.html" class="nav-link p-0 text-white">What is a VPN?</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Top 5 VPN Uses</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">How-To Privacy Guides</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Digital Security Lab</a></li>
+            </ul>
+          </div>
+
+          <div class="col-2">
+            <h6>TOOLS</h6>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">What is my IP?</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">DNS Leak Test</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">WebRTC Leak Test</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Password Generator</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Log4j Vulnerability (VPN Protection)</a></li>
+            </ul>
+          </div>
+
+          <div class="col-2">
+            <h6>HELP</h6>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="./supportCenter.html" class="nav-link p-0 text-white">Support Center</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Tutorials</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">FAQ</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Privacy Policy</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Terms of Service</a></li>
+              <li class="nav-item mb-2"><a href="./contactUs.html" class="nav-link p-0 text-white">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-between py-4 mt-5 border-top footerBottom">
+          <p class="fw-light">&copy; 2022 SimpleVPN. All rights reserved.</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3">
+              <a href="https://twitter.com" target="blank">
+                <i class="bi bi-twitter"></i>
+              </a>
+            </li>
+            <li class="ms-3">
+              <a href="https://instagram.com" target="blank">
+                <i class="bi bi-instagram"></i>
+              </a>
+            </li>
+            <li class="ms-3">
+              <a href="https://facebook.com" target="blank">
+                <i class="bi bi-facebook"></i>
+              </a>
+            </li>
+            <li class="ms-3">
+              <a href="https://youtube.com" target="blank">
+                <i class="bi bi-youtube"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div> -->
+    <!-- footer end -->
+
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/dist/js/index.js"></script>
   </body>

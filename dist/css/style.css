@@ -10787,7 +10787,7 @@ textarea.form-control-lg {
 @media (max-width: 992px) {
   .bgCon {
     height: 1076px;
-    margin-top: 42px;
+    margin-top: 84px;
   }
 }
 @media (max-width: 576px) {
@@ -10866,6 +10866,68 @@ textarea.form-control-lg {
 }
 .cardsCon .card {
   max-width: 500px;
+}
+
+.supportMain {
+  margin-top: 84px;
+  height: 800px;
+}
+.supportMain .searchCon .form {
+  position: relative;
+}
+.supportMain .searchCon .form .bi-search {
+  position: absolute;
+  top: 17px;
+  left: 18px;
+  color: #9ca3af;
+}
+.supportMain .searchCon .form span {
+  position: absolute;
+  right: 15px;
+  top: 13px;
+  padding: 2px;
+  border-left: 1px solid #d1d5db;
+}
+.supportMain .searchCon .left-pan {
+  padding-left: 7px;
+}
+.supportMain .searchCon .left-pan i {
+  padding-left: 10px;
+}
+.supportMain .searchCon .form-input {
+  height: 55px;
+  text-indent: 33px;
+  border-radius: 10px;
+  box-shadow: none;
+  border: none;
+}
+.supportMain .searchCon .col-md-6 {
+  margin-top: 100px;
+}
+.supportMain .searchCon .col-md-6 h1 {
+  width: fit-content;
+}
+.supportMain .bubbleCon .bubble {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 5px 5px #333333;
+}
+.supportMain .bubbleCon .bubble .bi {
+  font-size: 80px;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+}
+.supportMain .bubbleCon .btn:hover {
+  color: black !important;
+}
+.supportMain .bubbleCon .bubbleDiv {
+  width: 150px;
+  margin: auto !important;
 }
 
 /*# sourceMappingURL=style.css.map */
