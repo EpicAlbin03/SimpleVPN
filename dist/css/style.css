@@ -10804,6 +10804,43 @@ textarea.form-control-lg {
     flex-direction: column;
   }
 }
+.supportMain {
+  margin-top: 84px;
+}
+.supportMain .bubbleCon {
+  padding-bottom: 100px !important;
+}
+.supportMain .bubbleCon .bubble {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 5px 5px #333333;
+}
+.supportMain .bubbleCon .bubble .bi {
+  font-size: 80px;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+}
+.supportMain .bubbleCon .btn:hover {
+  color: black !important;
+}
+.supportMain .bubbleCon .bubbleDiv {
+  width: 150px;
+  margin: auto !important;
+}
+
+@media (max-width: 992px) {
+  .supportMain .bubbleCon {
+    width: 540px;
+  }
+  .supportMain .bubbleCon .col-sm {
+    margin-bottom: 85px !important;
+  }
+}
 .bg-img {
   background-image: url("https://images.unsplash.com/photo-1508108712903-49b7ef9b1df8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1738&q=80");
   background-position: center;
