@@ -10804,20 +10804,30 @@ textarea.form-control-lg {
     flex-direction: column;
   }
 }
-.supportMain {
+.contactUsMain {
   margin-top: 84px;
 }
-.supportMain .bubbleCon {
+.contactUsMain .faqCon .col-md-6 {
+  margin-top: 100px;
+}
+.contactUsMain .faqCon .col-md-6 h1 {
+  width: fit-content;
+  text-align: center;
+}
+.contactUsMain .btn:hover {
+  color: black !important;
+}
+.contactUsMain .bubbleCon {
   padding-bottom: 100px !important;
 }
-.supportMain .bubbleCon .bubble {
+.contactUsMain .bubbleCon .bubble {
   width: 150px;
   height: 150px;
   border-radius: 50%;
   display: inline-block;
   box-shadow: 5px 5px #333333;
 }
-.supportMain .bubbleCon .bubble .bi {
+.contactUsMain .bubbleCon .bubble .bi {
   font-size: 80px;
   top: 50%;
   -ms-transform: translateY(-50%);
@@ -10825,20 +10835,32 @@ textarea.form-control-lg {
   width: 100%;
   text-align: center;
 }
-.supportMain .bubbleCon .btn:hover {
-  color: black !important;
-}
-.supportMain .bubbleCon .bubbleDiv {
+.contactUsMain .bubbleCon .bubbleDiv {
   width: 150px;
   margin: auto !important;
 }
 
+@media (max-width: 1200px) {
+  .contactUsMain .faqCon .col-md-6 {
+    width: 660px !important;
+  }
+}
 @media (max-width: 992px) {
-  .supportMain .bubbleCon {
+  .contactUsMain .bubbleCon {
     width: 540px;
   }
-  .supportMain .bubbleCon .col-sm {
+  .contactUsMain .bubbleCon .col-sm {
     margin-bottom: 85px !important;
+  }
+}
+@media (max-width: 768px) {
+  .contactUsMain .faqCon .btn {
+    margin: auto !important;
+  }
+}
+@media (max-width: 576px) {
+  .contactUsMain .faqCon .btn {
+    width: 100% !important;
   }
 }
 .bg-img {

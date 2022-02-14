@@ -1,52 +1,22 @@
 @use "../components/" as *;
 
-.supportMain {
+.contactUsMain {
   margin-top: $marginNav;
 
-  //   .searchCon {
-  //     .form {
-  //       position: relative;
-  //     }
+  .faqCon {
+    .col-md-6 {
+      margin-top: 100px;
 
-  //     .form .bi-search {
-  //       position: absolute;
-  //       top: 17px;
-  //       left: 18px;
-  //       color: #9ca3af;
-  //     }
+      h1 {
+        width: fit-content;
+        text-align: center;
+      }
+    }
+  }
 
-  //     .form span {
-  //       position: absolute;
-  //       right: 15px;
-  //       top: 13px;
-  //       padding: 2px;
-  //       border-left: 1px solid #d1d5db;
-  //     }
-
-  //     .left-pan {
-  //       padding-left: 7px;
-  //     }
-
-  //     .left-pan i {
-  //       padding-left: 10px;
-  //     }
-
-  //     .form-input {
-  //       height: 55px;
-  //       text-indent: 33px;
-  //       border-radius: 10px;
-  //       box-shadow: none;
-  //       border: none;
-  //     }
-
-  //     .col-md-6 {
-  //       margin-top: 100px;
-
-  //       h1 {
-  //         width: fit-content;
-  //       }
-  //     }
-  //   }
+  .btn:hover {
+    color: black !important;
+  }
 
   .bubbleCon {
     padding-bottom: 100px !important;
@@ -68,10 +38,6 @@
       }
     }
 
-    .btn:hover {
-      color: black !important;
-    }
-
     .bubbleDiv {
       width: 150px;
       margin: auto !important;
@@ -84,10 +50,17 @@
 }
 
 @media (max-width: 1200px) {
+  .contactUsMain {
+    .faqCon {
+      .col-md-6 {
+        width: 660px !important;
+      }
+    }
+  }
 }
 
 @media (max-width: 992px) {
-  .supportMain {
+  .contactUsMain {
     .bubbleCon {
       width: 540px;
 
@@ -95,22 +68,25 @@
         margin-bottom: 85px !important;
       }
     }
-
-    // .searchCon {
-    //   .col-md-6 {
-    //     width: 479px;
-    //   }
-    // }
   }
 }
 
-@media (max-width: 767px) {
-  //   .supportMain {
-  //     .bubbleCon, .col-md-6 {
-  //       width: auto;
-  //     }
-  //   }
+@media (max-width: 768px) {
+  .contactUsMain {
+    .faqCon {
+      .btn {
+        margin: auto !important;
+      }
+    }
+  }
 }
 
 @media (max-width: 576px) {
+  .contactUsMain {
+    .faqCon {
+      .btn {
+        width: 100% !important;
+      }
+    }
+  }
 }
