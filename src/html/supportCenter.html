@@ -54,11 +54,11 @@
 
     <main class="bg-primary supportMain">
       <!-- search-bar start -->
-      <div class="container searchCon pt-3 pb-5">
+      <div class="container searchCon pb-5">
         <div class="row d-flex justify-content-center align-items-center">
           <div class="col-md-6">
             <label for="searchBar" class="text-white w-100 mb-3">
-              <h1 class="mx-auto">How can we help you?</h1>
+              <h1 class="mx-auto" id="helpText">How can we help you?</h1>
             </label>
             <div class="form" id="searchBar">
               <i class="bi bi-search"></i>
@@ -74,8 +74,8 @@
 
       <!-- bubbles start -->
       <div class="container bubbleCon mt-5">
-        <div class="mt-5 pt-5 d-flex row justify-content-center align-items-center">
-          <div class="col">
+        <div class="mt-5 d-flex row justify-content-center align-items-center">
+          <div class="col-sm">
             <div class="bubbleDiv">
               <a class="bubble bg-white position-relative" href="#">
                 <i class="bi bi-tools text-black position-absolute"></i>
@@ -86,7 +86,7 @@
             </div>
           </div>
 
-          <div class="col">
+          <div class="col-sm">
             <div class="bubbleDiv">
               <a class="bubble bg-white position-relative" href="#">
                 <i class="bi bi-chat text-black position-absolute"></i>
@@ -97,7 +97,7 @@
             </div>
           </div>
 
-          <div class="col">
+          <div class="col-sm">
             <div class="bubbleDiv">
               <a class="bubble bg-white position-relative" href="#">
                 <i class="bi bi-book text-black position-absolute"></i>
@@ -108,7 +108,7 @@
             </div>
           </div>
 
-          <div class="col">
+          <div class="col-sm">
             <div class="bubbleDiv">
               <a class="bubble bg-white position-relative" href="#">
                 <i class="bi bi-question-lg text-black position-absolute"></i>
@@ -124,7 +124,7 @@
     </main>
 
     <!-- footer start -->
-    <!-- <div class="container-fluid footerCon text-white-50">
+    <div class="container-fluid footerCon text-white-50">
       <footer class="py-5">
         <div class="row justify-content-center">
           <div class="col-2">
@@ -217,10 +217,11 @@
           </ul>
         </div>
       </footer>
-    </div> -->
+    </div>
     <!-- footer end -->
 
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/dist/js/index.js"></script>
+    <script src="/dist/js/supportCenter.js"></script>
   </body>
 </html>

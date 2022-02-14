@@ -10870,7 +10870,6 @@ textarea.form-control-lg {
 
 .supportMain {
   margin-top: 84px;
-  height: 800px;
 }
 .supportMain .searchCon .form {
   position: relative;
@@ -10907,6 +10906,9 @@ textarea.form-control-lg {
 .supportMain .searchCon .col-md-6 h1 {
   width: fit-content;
 }
+.supportMain .bubbleCon {
+  padding-bottom: 100px !important;
+}
 .supportMain .bubbleCon .bubble {
   width: 150px;
   height: 150px;
@@ -10928,6 +10930,23 @@ textarea.form-control-lg {
 .supportMain .bubbleCon .bubbleDiv {
   width: 150px;
   margin: auto !important;
+}
+
+@media (max-width: 992px) {
+  .supportMain .bubbleCon {
+    width: 540px;
+  }
+  .supportMain .bubbleCon .col-sm {
+    margin-bottom: 85px !important;
+  }
+  .supportMain .searchCon .col-md-6 {
+    width: 479px;
+  }
+}
+@media (max-width: 767px) {
+  .supportMain .bubbleCon, .supportMain .col-md-6 {
+    width: auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

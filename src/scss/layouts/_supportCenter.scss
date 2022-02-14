@@ -2,7 +2,6 @@
 
 .supportMain {
   margin-top: $marginNav;
-  height: 800px;
 
   .searchCon {
     .form {
@@ -50,6 +49,8 @@
   }
 
   .bubbleCon {
+    padding-bottom: 100px !important;
+
     .bubble {
       width: 150px;
       height: 150px;
@@ -76,4 +77,40 @@
         margin: auto !important;
     }
   }
+}
+
+// breakpoints start
+@media (max-width: 1400px) {
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 992px) {
+  .supportMain {
+    .bubbleCon {
+      width: 540px;
+
+      .col-sm {
+        margin-bottom: 85px !important;
+      }
+    }
+
+    .searchCon {
+      .col-md-6 {
+        width: 479px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .supportMain {
+    .bubbleCon, .col-md-6 {
+      width: auto;
+    }
+  }
+}
+
+@media (max-width: 576px) {
 }
