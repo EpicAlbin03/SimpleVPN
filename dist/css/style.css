@@ -10942,7 +10942,7 @@ textarea.form-control-lg {
   background: #eee;
 }
 .signInCon .h-custom {
-  height: calc(100% - 73px);
+  height: calc(100% - 72px);
 }
 .signInCon .btnLogin {
   padding-left: 2.5rem;
@@ -10971,6 +10971,7 @@ textarea.form-control-lg {
 @media (max-width: 991.98px) {
   .signInCon .h-custom {
     width: 100%;
+    height: 100%;
   }
   .signInCon footer {
     margin-top: 50px;
@@ -10980,8 +10981,66 @@ textarea.form-control-lg {
   }
 }
 @media (max-width: 450px) {
-  .signInCon .h-custom {
+  .signInCon footer {
+    margin-top: 100px;
+  }
+}
+
+.signUpCon a {
+  text-decoration: none;
+}
+.signUpCon form a:hover {
+  text-decoration: underline;
+}
+.signUpCon .divider:after,
+.signUpCon .divider:before {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #eee;
+}
+.signUpCon .h-custom {
+  height: calc(100% - 72px);
+}
+.signUpCon .btnLogin {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+.signUpCon .btnFacebook,
+.signUpCon .btnTwitter,
+.signUpCon .btnGoogle {
+  height: 40px;
+  width: 40px;
+}
+.signUpCon .btnFacebook {
+  background-color: #3B5998;
+}
+.signUpCon .btnTwitter {
+  background-color: #1DA1F2;
+}
+.signUpCon .btnGoogle {
+  background-color: #EA4335;
+}
+@media (max-width: 1199.98px) {
+  .signUpCon .h-custom {
+    width: 90%;
+  }
+}
+@media (max-width: 991.98px) {
+  .signUpCon .h-custom {
+    width: 100%;
     height: 100%;
+  }
+  .signUpCon footer {
+    margin-top: 100px;
+  }
+  .signUpCon .imgDiv {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 450px) {
+  .signUpCon footer {
+    margin-top: 200px;
   }
 }
 
