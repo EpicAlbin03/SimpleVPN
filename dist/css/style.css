@@ -10895,7 +10895,7 @@ textarea.form-control-lg {
   padding: 0;
   line-height: 60px;
 }
-@media (max-width: 991.98px) {
+@media (max-width: 767.98px) {
   .homeCon .imgCon {
     margin: auto;
   }
@@ -10916,16 +10916,57 @@ textarea.form-control-lg {
   }
 }
 
-.pricingHero {
+.pricingCon .hero {
   max-width: 700px;
   margin-top: 84px;
 }
-
-.cardsCon {
+.pricingCon .cardsCon {
   max-width: 1513px;
 }
-.cardsCon .card {
+.pricingCon .cardsCon .card {
   max-width: 500px;
+}
+
+.referCon .infoCard img {
+  border-radius: 20px;
+  margin-top: 84px;
+}
+.referCon .infoCard ul {
+  padding-left: 20px !important;
+}
+.referCon .hero {
+  max-width: 700px;
+  margin-top: 84px;
+}
+.referCon .card-group .card {
+  border-radius: 20px;
+  box-shadow: 3px 3px #333333;
+}
+.referCon .footerCon {
+  margin-top: 100px !important;
+}
+@media (max-width: 991.98px) {
+  .referCon .card-group {
+    display: flex;
+    flex-direction: column;
+    width: 50% !important;
+  }
+  .referCon .card-group .card.mx-5 {
+    margin: 50px 0px 50px 0px !important;
+  }
+}
+@media (max-width: 767.98px) {
+  .referCon .card-group {
+    width: 75% !important;
+  }
+  .referCon .imgCon {
+    margin: auto;
+  }
+}
+@media (max-width: 575.98px) {
+  .referCon .card-group {
+    width: 90% !important;
+  }
 }
 
 .signInCon a {

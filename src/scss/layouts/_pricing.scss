@@ -1,15 +1,17 @@
 @use "../base/" as *;
 @use "../components/" as *;
 
-.pricingHero {
-  max-width: 700px;
-  margin-top: $marginNav;
-}
+.pricingCon {
+  .hero {
+    max-width: 700px;
+    margin-top: $marginNav;
+  }
 
-.cardsCon {
-  max-width: 1513px;
-  
+  .cardsCon {
+    max-width: 1513px;
+
     .card {
-        max-width: 500px;
+      max-width: 500px;
     }
+  }
 }

@@ -1,1 +1,70 @@
 @use "../base/" as *;
+@use "../components/" as *;
+
+.referCon {
+  .infoCard {
+    img {
+      border-radius: 20px;
+      margin-top: $marginNav;
+    }
+
+    ul {
+      padding-left: 20px !important;
+    }
+  }
+
+  .hero {
+    max-width: 700px;
+    margin-top: $marginNav;
+  }
+
+  .card-group {
+    .card {
+      border-radius: 20px;
+      box-shadow: 3px 3px rgb(51, 51, 51);
+    }
+  }
+
+  .footerCon {
+    margin-top: 100px !important;
+  }
+
+  // 1399.98px
+  @media (max-width: $xxl) {
+  }
+
+  // 1199.98px
+  @media (max-width: $xl) {
+  }
+
+  //991.98px
+  @media (max-width: $lg) {
+    .card-group {
+        display: flex;
+        flex-direction: column;
+        width: 50% !important;
+
+        .card.mx-5 {
+            margin: 50px 0px 50px 0px !important;
+        }
+    }
+  }
+
+  // 767.98px
+  @media (max-width: $md) {
+    .card-group {
+        width: 75% !important;
+    }
+
+    .imgCon {
+        margin: auto;
+      }
+  }
+
+  // 575.98px
+  @media (max-width: $sm) {
+    .card-group {
+        width: 90% !important;
+    }
+  }
+}
