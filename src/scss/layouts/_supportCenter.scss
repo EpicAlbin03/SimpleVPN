@@ -1,5 +1,5 @@
-@use "../components/" as *;
 @use "../base/" as *;
+@use "../components/" as *;
 
 .supportMain {
   margin-top: $marginNav;
@@ -134,17 +134,17 @@
       margin: auto !important;
     }
   }
-}
 
-// breakpoints start
-@media (max-width: 1400px) {
-}
+  // 1399.98px
+  @media (max-width: $xxl) {
+  }
 
-@media (max-width: 1200px) {
-}
+  // 1199.98px
+  @media (max-width: $xl) {
+  }
 
-@media (max-width: 992px) {
-  .supportMain {
+  //991.98px
+  @media (max-width: $lg) {
     .bubbleCon {
       width: 540px;
 
@@ -159,16 +159,16 @@
       }
     }
   }
-}
 
-@media (max-width: 767px) {
-  .supportMain {
+  // 767.98px
+  @media (max-width: $md) {
     .bubbleCon,
     .col-md-6 {
       width: auto;
     }
   }
-}
 
-@media (max-width: 576px) {
+  // 575.98px
+  @media (max-width: $sm) {
+  }
 }

@@ -1,6 +1,7 @@
+@use "../base/" as *;
 @use "../components/" as *;
 
-.bgCon {
+.checkoutCon {
   margin-top: $marginNav;
   overflow-x: hidden;
 
@@ -40,34 +41,35 @@
       background-color: white;
     }
   }
-}
 
-// breakpoints start
-@media (max-width: 1400px) {
-}
+  // 1399.98px
+  @media (max-width: $xxl) {
+  }
 
-@media (max-width: 1200px) {
-}
+  // 1199.98px
+  @media (max-width: $xl) {
+  }
 
-@media (max-width: 992px) {
-  .bgCon {
+  //991.98px
+  @media (max-width: $lg) {
     height: 1076px;
     margin-top: $marginNav;
   }
-}
 
-@media (max-width: 768px) {
-}
+  // 767.98px
+  @media (max-width: $md) {
+  }
 
-@media (max-width: 576px) {
-  .bgCon {
+  // 575.98px
+  @media (max-width: $sm) {
     .dropdown-menu {
       div {
         padding: 10px !important;
         width: 100% !important;
       }
 
-      .creditDiv, .d-grid {
+      .creditDiv,
+      .d-grid {
         padding: 0 !important;
         padding-left: 20px !important;
         padding-right: 20px !important;

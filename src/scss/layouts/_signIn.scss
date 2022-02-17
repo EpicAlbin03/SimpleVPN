@@ -1,0 +1,89 @@
+@use "../base/" as *;
+
+.signInCon {
+  a {
+    text-decoration: none;
+  }
+
+  form {
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .divider:after,
+  .divider:before {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #eee;
+  }
+
+  .h-custom {
+    height: calc(100% - 73px);
+  }
+
+  .btnLogin {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .btnFacebook,
+  .btnTwitter,
+  .btnGoogle {
+    height: 40px;
+    width: 40px;
+  }
+
+  .btnFacebook {
+    background-color: $facebook;
+  }
+
+  .btnTwitter {
+    background-color: $twitter;
+  }
+
+  .btnGoogle {
+    background-color: $google;
+  }
+
+  // 1399.98px
+  @media (max-width: $xxl) {
+  }
+
+  // 1199.98px
+  @media (max-width: $xl) {
+    .h-custom {
+      width: 90%;
+    }
+  }
+
+  //991.98px
+  @media (max-width: $lg) {
+    .h-custom {
+      width: 100%;
+    }
+
+    footer {
+      margin-top: 50px;
+    }
+
+    .imgDiv {
+      margin-bottom: 50px;
+    }
+  }
+
+  // 767.98px
+  @media (max-width: $md) {
+  }
+
+  // 575.98px
+  @media (max-width: $sm) {
+  }
+
+  @media (max-width: 450px) {
+    .h-custom {
+      height: 100%;
+    }
+  }
+}

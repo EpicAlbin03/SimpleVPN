@@ -1,3 +1,4 @@
+@use "../base/" as *;
 @use "../components/" as *;
 
 .contactUsMain {
@@ -43,24 +44,22 @@
       margin: auto !important;
     }
   }
-}
 
-// breakpoints start
-@media (max-width: 1400px) {
-}
+  // 1399.98px
+  @media (max-width: $xxl) {
+  }
 
-@media (max-width: 1200px) {
-  .contactUsMain {
+  // 1199.98px
+  @media (max-width: $xl) {
     .faqCon {
       .col-md-6 {
         width: 660px !important;
       }
     }
   }
-}
 
-@media (max-width: 992px) {
-  .contactUsMain {
+  //991.98px
+  @media (max-width: $lg) {
     .bubbleCon {
       width: 540px;
 
@@ -69,20 +68,18 @@
       }
     }
   }
-}
 
-@media (max-width: 768px) {
-  .contactUsMain {
+  // 767.98px
+  @media (max-width: $md) {
     .faqCon {
       .btn {
         margin: auto !important;
       }
     }
   }
-}
 
-@media (max-width: 576px) {
-  .contactUsMain {
+  // 575.98px
+  @media (max-width: $sm) {
     .faqCon {
       .btn {
         width: 100% !important;

@@ -2,7 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 a,
 p,
-button {
+button,
+div {
   font-family: "Roboto", sans-serif;
 }
 
@@ -10752,58 +10753,59 @@ textarea.form-control-lg {
     display: block;
   }
 }
-.bgCon {
+.checkoutCon {
   margin-top: 84px;
   overflow-x: hidden;
 }
-.bgCon #leftSide {
+.checkoutCon #leftSide {
   padding-top: 8px;
 }
-.bgCon .plan {
+.checkoutCon .plan {
   font-size: small;
   margin-left: 37px;
 }
-.bgCon label[for=email] a {
+.checkoutCon label[for=email] a {
   text-decoration: none;
 }
-.bgCon label[for=email] a:hover {
+.checkoutCon label[for=email] a:hover {
   text-decoration: underline;
 }
-.bgCon label {
+.checkoutCon label {
   font-size: small;
   font-weight: 500;
 }
-.bgCon .dropdown .btnDropdown.active.focus,
-.bgCon .dropdown .btnDropdown.active:focus,
-.bgCon .dropdown .btnDropdown.focus,
-.bgCon .dropdown .btnDropdown:active.focus,
-.bgCon .dropdown .btnDropdown:active:focus,
-.bgCon .dropdown .btnDropdown:focus {
+.checkoutCon .dropdown .btnDropdown.active.focus,
+.checkoutCon .dropdown .btnDropdown.active:focus,
+.checkoutCon .dropdown .btnDropdown.focus,
+.checkoutCon .dropdown .btnDropdown:active.focus,
+.checkoutCon .dropdown .btnDropdown:active:focus,
+.checkoutCon .dropdown .btnDropdown:focus {
   outline: none;
   box-shadow: none;
   background-color: white;
 }
-
-@media (max-width: 992px) {
-  .bgCon {
+@media (max-width: 991.98px) {
+  .checkoutCon {
     height: 1076px;
     margin-top: 84px;
   }
 }
-@media (max-width: 576px) {
-  .bgCon .dropdown-menu div {
+@media (max-width: 575.98px) {
+  .checkoutCon .dropdown-menu div {
     padding: 10px !important;
     width: 100% !important;
   }
-  .bgCon .dropdown-menu .creditDiv, .bgCon .dropdown-menu .d-grid {
+  .checkoutCon .dropdown-menu .creditDiv,
+.checkoutCon .dropdown-menu .d-grid {
     padding: 0 !important;
     padding-left: 20px !important;
     padding-right: 20px !important;
   }
-  .bgCon .dropdown-menu .d-flex {
+  .checkoutCon .dropdown-menu .d-flex {
     flex-direction: column;
   }
 }
+
 .contactUsMain {
   margin-top: 84px;
 }
@@ -10839,13 +10841,12 @@ textarea.form-control-lg {
   width: 150px;
   margin: auto !important;
 }
-
-@media (max-width: 1200px) {
+@media (max-width: 1199.98px) {
   .contactUsMain .faqCon .col-md-6 {
     width: 660px !important;
   }
 }
-@media (max-width: 992px) {
+@media (max-width: 991.98px) {
   .contactUsMain .bubbleCon {
     width: 540px;
   }
@@ -10853,17 +10854,18 @@ textarea.form-control-lg {
     margin-bottom: 85px !important;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
   .contactUsMain .faqCon .btn {
     margin: auto !important;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 575.98px) {
   .contactUsMain .faqCon .btn {
     width: 100% !important;
   }
 }
-.bg-img {
+
+.homeCon .bg-img {
   background-image: url("https://images.unsplash.com/photo-1508108712903-49b7ef9b1df8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1738&q=80");
   background-position: center;
   background-repeat: no-repeat;
@@ -10872,8 +10874,7 @@ textarea.form-control-lg {
   height: 75vh;
   width: 100%;
 }
-
-.hero {
+.homeCon .hero {
   position: absolute;
   width: 100%;
   padding-bottom: 100%;
@@ -10881,33 +10882,32 @@ textarea.form-control-lg {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.hero h1 {
+.homeCon .hero h1 {
   font-size: 60px;
 }
-.hero p {
+.homeCon .hero p {
   font-size: 1.5rem;
   font-weight: 500;
 }
-.hero .btn {
+.homeCon .hero .btn {
   height: 60px;
   width: 180px;
   padding: 0;
   line-height: 60px;
 }
-
-@media (max-width: 992px) {
-  .imgCon {
+@media (max-width: 991.98px) {
+  .homeCon .imgCon {
     margin: auto;
   }
 }
-@media (max-width: 576px) {
-  .hero h1 {
+@media (max-width: 575.98px) {
+  .homeCon .hero h1 {
     font-size: 40px;
   }
-  .hero p {
+  .homeCon .hero p {
     font-size: 1.3rem;
   }
-  .hero .btn {
+  .homeCon .hero .btn {
     height: 50px;
     width: 150px;
     font-size: 1rem;
@@ -10915,6 +10915,7 @@ textarea.form-control-lg {
     line-height: 50px;
   }
 }
+
 .pricingHero {
   max-width: 700px;
   margin-top: 84px;
@@ -10925,6 +10926,63 @@ textarea.form-control-lg {
 }
 .cardsCon .card {
   max-width: 500px;
+}
+
+.signInCon a {
+  text-decoration: none;
+}
+.signInCon form a:hover {
+  text-decoration: underline;
+}
+.signInCon .divider:after,
+.signInCon .divider:before {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #eee;
+}
+.signInCon .h-custom {
+  height: calc(100% - 73px);
+}
+.signInCon .btnLogin {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+.signInCon .btnFacebook,
+.signInCon .btnTwitter,
+.signInCon .btnGoogle {
+  height: 40px;
+  width: 40px;
+}
+.signInCon .btnFacebook {
+  background-color: #3B5998;
+}
+.signInCon .btnTwitter {
+  background-color: #1DA1F2;
+}
+.signInCon .btnGoogle {
+  background-color: #EA4335;
+}
+@media (max-width: 1199.98px) {
+  .signInCon .h-custom {
+    width: 90%;
+  }
+}
+@media (max-width: 991.98px) {
+  .signInCon .h-custom {
+    width: 100%;
+  }
+  .signInCon footer {
+    margin-top: 50px;
+  }
+  .signInCon .imgDiv {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 450px) {
+  .signInCon .h-custom {
+    height: 100%;
+  }
 }
 
 .supportMain {
@@ -11038,8 +11096,7 @@ textarea.form-control-lg {
   width: 150px;
   margin: auto !important;
 }
-
-@media (max-width: 992px) {
+@media (max-width: 991.98px) {
   .supportMain .bubbleCon {
     width: 540px;
   }
@@ -11050,7 +11107,7 @@ textarea.form-control-lg {
     width: 479px;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 767.98px) {
   .supportMain .bubbleCon,
 .supportMain .col-md-6 {
     width: auto;

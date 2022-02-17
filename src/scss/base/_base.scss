@@ -9,10 +9,20 @@ $theme-colors: (
 $primary: #1879c0;
 $secondary: #6c757d;
 $success: #0f866c;
+$google: #EA4335;
+$twitter: #1DA1F2;
+$facebook: #3B5998;
+
+$sm: 575.98px;
+$md: 767.98px;
+$lg: 991.98px;
+$xl: 1199.98px;
+$xxl: 1399.98px;
 
 a,
 p,
-button {
+button,
+div {
   font-family: "Roboto", sans-serif;
 }
 
