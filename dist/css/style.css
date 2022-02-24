@@ -25,6 +25,33 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
+::-webkit-scrollbar {
+  width: 16px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #F1F1F1;
+}
+
+::-webkit-scrollbar-track:horizontal {
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #909090;
+  border: 4px solid #F1F1F1;
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  border: 3px solid white;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #606060;
+}
+
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -10753,6 +10780,142 @@ textarea.form-control-lg {
     display: block;
   }
 }
+.blogCon .topics {
+  margin-top: 109px !important;
+  overflow-x: auto;
+  margin-left: 12px !important;
+  margin-right: 9px !important;
+}
+.blogCon .topics li {
+  flex-shrink: 0;
+  height: 100%;
+}
+.blogCon .topics a,
+.blogCon .topics .bi {
+  text-decoration: none;
+  font-weight: 500;
+}
+.blogCon .topics a:hover,
+.blogCon .topics .bi:hover {
+  color: black !important;
+}
+.blogCon .cardGroup .card {
+  border-radius: 20px;
+  box-shadow: 3px 3px #333333;
+}
+.blogCon .cardGroup .card .roundedTop {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.blogCon .cardGroup .card li,
+.blogCon .cardGroup .card .smallText {
+  font-size: 12px;
+  font-weight: 500;
+}
+.blogCon .cardGroup .card .bi-person-circle {
+  font-size: 36px;
+  margin-top: 2px !important;
+}
+.blogCon .cardGroup .card .authorDiv {
+  height: 36px;
+}
+.blogCon .searchCon {
+  padding-left: 12px !important;
+  padding-right: 9px !important;
+}
+.blogCon .searchCon .form {
+  position: relative;
+}
+.blogCon .searchCon .form .bi-search {
+  position: absolute;
+  top: 17px;
+  left: 18px;
+  color: #9ca3af;
+}
+.blogCon .searchCon .form span {
+  position: absolute;
+  right: 15px;
+  top: 13px;
+  padding: 2px;
+  border-left: 1px solid #d1d5db;
+}
+.blogCon .searchCon .left-pan {
+  padding-left: 7px;
+}
+.blogCon .searchCon .left-pan i {
+  padding-left: 10px;
+}
+.blogCon .searchCon .form-input {
+  height: 55px;
+  text-indent: 33px;
+  border-radius: 10px;
+  box-shadow: none;
+  border: none;
+}
+.blogCon .searchCon .col-md-6 h1 {
+  width: fit-content;
+}
+.blogCon .searchCon .autocomplete {
+  /*the container must be positioned relative:*/
+  position: relative;
+  display: inline-block;
+}
+.blogCon .searchCon input {
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-size: 16px;
+}
+.blogCon .searchCon input[type=text] {
+  background-color: #f1f1f1;
+  width: 100%;
+}
+.blogCon .searchCon input[type=submit] {
+  background-color: #1879c0;
+  color: #fff;
+}
+.blogCon .searchCon .autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+  border-radius: 10px;
+  background-color: white;
+}
+.blogCon .searchCon .autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+  border-radius: 10px;
+}
+.blogCon .searchCon .autocomplete-items div:hover {
+  /*when hovering an item:*/
+  background-color: #e9e9e9;
+}
+.blogCon .searchCon .autocomplete-active {
+  /*when navigating through the items using the arrow keys:*/
+  background-color: #1879c0 !important;
+  color: #ffffff;
+}
+@media (max-width: 575.98px) {
+  .blogCon .searchCon {
+    width: 90%;
+    padding: 0 !important;
+    margin: auto !important;
+  }
+}
+@media (max-width: 310px) {
+  .blogCon .cardGroup .col2 {
+    margin-top: 21px !important;
+  }
+}
+
 .checkoutCon {
   margin-top: 84px;
   overflow-x: hidden;

@@ -5,13 +5,488 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SimpleVPN - Blog</title>
-    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="/dist/css/style.css" />
     <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css" />
     <link rel="shortcut icon" href="../images/logo-16x16.png" type="image/x-icon" />
   </head>
   <body>
+    <div class="blogCon">
+      <!-- navbar start -->
+      <nav class="navbar navbar-expand fixed-top" id="navbar">
+        <div class="container-fluid">
+          <div class="navbar-nav customNav m-auto">
+            <a class="navbar-brand fw-bold" href="./home.html">
+              <img src="../images/logo-48x48.png" alt="SimpleVPN logo" />
+              SimpleVPN
+            </a>
+            <div class="conatiner d-flex ms-auto">
+              <a class="nav-link me-2 navHide" href="./pricing.html">Pricing</a>
+              <a class="nav-link me-2 navHide" href="./whatIsVPN.html">What is a VPN?</a>
+              <a class="nav-link me-2 navHide" href="./referFriend.html">Refer a Friend</a>
+              <a class="nav-link me-3 navHide" href="./blog.html">Blog</a>
+              <a role="button" class="btn btn-success text-white me-3 px-3" href="./pricing.html">Get Started</a>
+              <a class="nav-link me-2 navHide" href="./supportCenter.html">Help</a>
+              <a class="nav-link user" href="./signIn.html">
+                <i class="bi bi-person-circle"></i>
+              </a>
+
+              <div class="nav-item dropdown">
+                <a class="nav-link ms-2 list" id="navDropdown" role="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+                  <i class="bi bi-list"></i>
+                </a>
+                <ul class="dropdown-menu border-0 mt-0" aria-labelledby="navDropdown">
+                  <li><a class="dropdown-item ps-3" href="./pricing.html">Pricing</a></li>
+                  <li><a class="dropdown-item ps-3" href="./whatIsVPN.html">What is a VPN?</a></li>
+                  <li><a class="dropdown-item ps-3" href="./referFriend.html">Refer a Friend</a></li>
+                  <li><a class="dropdown-item ps-3" href="./blog.html">Blog</a></li>
+                  <li><a class="dropdown-item ps-3" href="./supportCenter.html">Support Center</a></li>
+                  <li><a class="dropdown-item ps-3 menuSignIn" href="./signIn.html">Sign In</a></li>
+                  <li class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <a role="button" class="btn btn-success text-white px-3 mx-2 mt-2 menuPricing" href="./pricing.html">Get Started</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- navbar end -->
+
+      <div class="container p-0">
+      <!-- topics start -->
+      <ul class="topics list-unstyled d-flex mx-auto pb-2">
+        <li class="pe-3">
+          <a class="text-muted" href="#">Topic 1</a>
+        </li>
+        <li class="pe-3">
+          <a class="text-muted" href="#">Topic 2</a>
+        </li>
+        <li class="pe-3">
+          <a class="text-muted" href="#">Topic 3</a>
+        </li>
+        <li class="pe-3">
+          <a class="text-muted" href="#">Topic 4</a>
+        </li>
+        <li class="pe-3">
+          <a class="text-muted" href="#">Topic 5</a>
+        </li>
+        <li class="pe-3">
+          <a class="text-muted" href="#">Topic 6</a>
+        </li>
+        <li class="pe-3">
+          <a class="text-muted" href="#">Topic 7</a>
+        </li>
+        <li class="pe-3">
+          <a class="text-muted" href="#">Topic 8</a>
+        </li>
+      </ul>
+      <!-- topics end -->
+
+      <!-- search-bar start -->
+      <div class="container searchCon m-0">
+        <div class="row d-flex justify-content-center align-items-center">
+          <div class="col-md-6 w-100">
+            <form class="form" id="searchBar" autocomplete="off">
+              <div class="autocomplete w-100">
+                <i class="bi bi-search"></i>
+                <input type="text" class="form-control form-input" placeholder="Search anything..." id="searchInput" />
+                <span class="left-pan">
+                  <i class="bi bi-mic-fill"></i>
+                </span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- search-bar end -->
+
+      <!-- feature-cards start -->
+      <div class="container">
+        <h3 class="mt-5 mb-3">Featured</h3>
+        <div class="cardGroup mb-5 row row-cols-2 row-cols-lg-4" id="cardGroup">
+          <div class="col">
+            <a class="card border text-decoration-none" href="#">
+              <img src="https://cdn.pixabay.com/photo/2020/07/13/11/13/device-5400442_960_720.jpg" class="roundedTop" alt="article" />
+              <div class="card-body">
+                <p class="card-text pt-2 fw-bold text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                <p class="text-muted smallText">5 min read</p>
+                <div class="d-flex align-items-center authorDiv">
+                  <i class="bi bi-person-circle me-2 text-muted"></i>
+                  <ul class="list-unstyled mt-3">
+                    <li class="text-black">John Doe</li>
+                    <li class="text-muted">Jan 01, 2022</li>
+                  </ul>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col col2">
+            <a class="card border text-decoration-none" href="#">
+              <img src="https://cdn.pixabay.com/photo/2020/07/13/11/13/device-5400442_960_720.jpg" class="roundedTop" alt="article" />
+              <div class="card-body">
+                <p class="card-text pt-2 fw-bold text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                <p class="text-muted smallText">5 min read</p>
+                <div class="d-flex align-items-center authorDiv">
+                  <i class="bi bi-person-circle me-2 text-muted"></i>
+                  <ul class="list-unstyled mt-3">
+                    <li class="text-black">John Doe</li>
+                    <li class="text-muted">Jan 01, 2022</li>
+                  </ul>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col mt-4 mt-lg-0">
+            <a class="card border text-decoration-none" href="#">
+              <img src="https://cdn.pixabay.com/photo/2020/07/13/11/13/device-5400442_960_720.jpg" class="roundedTop" alt="article" />
+              <div class="card-body">
+                <p class="card-text pt-2 fw-bold text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                <p class="text-muted smallText">5 min read</p>
+                <div class="d-flex align-items-center authorDiv">
+                  <i class="bi bi-person-circle me-2 text-muted"></i>
+                  <ul class="list-unstyled mt-3">
+                    <li class="text-black">John Doe</li>
+                    <li class="text-muted">Jan 01, 2022</li>
+                  </ul>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col mt-4 mt-lg-0">
+            <a class="card border text-decoration-none" href="#">
+              <img src="https://cdn.pixabay.com/photo/2020/07/13/11/13/device-5400442_960_720.jpg" class="roundedTop" alt="article" />
+              <div class="card-body">
+                <p class="card-text pt-2 fw-bold text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                <p class="text-muted smallText">5 min read</p>
+                <div class="d-flex align-items-center authorDiv">
+                  <i class="bi bi-person-circle me-2 text-muted"></i>
+                  <ul class="list-unstyled mt-3">
+                    <li class="text-black">John Doe</li>
+                    <li class="text-muted">Jan 01, 2022</li>
+                  </ul>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col mt-4">
+            <a class="card border text-decoration-none" href="#">
+              <img src="https://cdn.pixabay.com/photo/2020/07/13/11/13/device-5400442_960_720.jpg" class="roundedTop" alt="article" />
+              <div class="card-body">
+                <p class="card-text pt-2 fw-bold text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                <p class="text-muted smallText">5 min read</p>
+                <div class="d-flex align-items-center authorDiv">
+                  <i class="bi bi-person-circle me-2 text-muted"></i>
+                  <ul class="list-unstyled mt-3">
+                    <li class="text-black">John Doe</li>
+                    <li class="text-muted">Jan 01, 2022</li>
+                  </ul>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col mt-4">
+            <a class="card border text-decoration-none" href="#">
+              <img src="https://cdn.pixabay.com/photo/2020/07/13/11/13/device-5400442_960_720.jpg" class="roundedTop" alt="article" />
+              <div class="card-body">
+                <p class="card-text pt-2 fw-bold text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                <p class="text-muted smallText">5 min read</p>
+                <div class="d-flex align-items-center authorDiv">
+                  <i class="bi bi-person-circle me-2 text-muted"></i>
+                  <ul class="list-unstyled mt-3">
+                    <li class="text-black">John Doe</li>
+                    <li class="text-muted">Jan 01, 2022</li>
+                  </ul>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col mt-4">
+            <a class="card border text-decoration-none" href="#">
+              <img src="https://cdn.pixabay.com/photo/2020/07/13/11/13/device-5400442_960_720.jpg" class="roundedTop" alt="article" />
+              <div class="card-body">
+                <p class="card-text pt-2 fw-bold text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                <p class="text-muted smallText">5 min read</p>
+                <div class="d-flex align-items-center authorDiv">
+                  <i class="bi bi-person-circle me-2 text-muted"></i>
+                  <ul class="list-unstyled mt-3">
+                    <li class="text-black">John Doe</li>
+                    <li class="text-muted">Jan 01, 2022</li>
+                  </ul>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col mt-4">
+            <a class="card border text-decoration-none" href="#">
+              <img src="https://cdn.pixabay.com/photo/2020/07/13/11/13/device-5400442_960_720.jpg" class="roundedTop" alt="article" />
+              <div class="card-body">
+                <p class="card-text pt-2 fw-bold text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                <p class="text-muted smallText">5 min read</p>
+                <div class="d-flex align-items-center authorDiv">
+                  <i class="bi bi-person-circle me-2 text-muted"></i>
+                  <ul class="list-unstyled mt-3">
+                    <li class="text-black">John Doe</li>
+                    <li class="text-muted">Jan 01, 2022</li>
+                  </ul>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- feature-cards end -->
+
+      <!-- most recent-cards start -->
+      <div class="container pb-5">
+        <h3 class="mt-5 mb-3">Most Recent</h3>
+        <div class="cardGroup mb-5 row row-cols-2 row-cols-lg-4">
+          <div class="col">
+            <a class="card border text-decoration-none" href="#">
+              <img src="https://cdn.pixabay.com/photo/2020/07/13/07/50/vpn-5399873__340.jpg" class="roundedTop" alt="article" />
+              <div class="card-body">
+                <p class="card-text pt-2 fw-bold text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                <p class="text-muted smallText">5 min read</p>
+                <div class="d-flex align-items-center authorDiv">
+                  <i class="bi bi-person-circle me-2 text-muted"></i>
+                  <ul class="list-unstyled mt-3">
+                    <li class="text-black">John Doe</li>
+                    <li class="text-muted">Jan 01, 2022</li>
+                  </ul>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col col2">
+            <a class="card border text-decoration-none" href="#">
+              <img src="https://cdn.pixabay.com/photo/2020/07/13/07/50/vpn-5399873__340.jpg" class="roundedTop" alt="article" />
+              <div class="card-body">
+                <p class="card-text pt-2 fw-bold text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                <p class="text-muted smallText">5 min read</p>
+                <div class="d-flex align-items-center authorDiv">
+                  <i class="bi bi-person-circle me-2 text-muted"></i>
+                  <ul class="list-unstyled mt-3">
+                    <li class="text-black">John Doe</li>
+                    <li class="text-muted">Jan 01, 2022</li>
+                  </ul>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col mt-4 mt-lg-0">
+            <a class="card border text-decoration-none" href="#">
+              <img src="https://cdn.pixabay.com/photo/2020/07/13/07/50/vpn-5399873__340.jpg" class="roundedTop" alt="article" />
+              <div class="card-body">
+                <p class="card-text pt-2 fw-bold text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                <p class="text-muted smallText">5 min read</p>
+                <div class="d-flex align-items-center authorDiv">
+                  <i class="bi bi-person-circle me-2 text-muted"></i>
+                  <ul class="list-unstyled mt-3">
+                    <li class="text-black">John Doe</li>
+                    <li class="text-muted">Jan 01, 2022</li>
+                  </ul>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col mt-4 mt-lg-0">
+            <a class="card border text-decoration-none" href="#">
+              <img src="https://cdn.pixabay.com/photo/2020/07/13/07/50/vpn-5399873__340.jpg" class="roundedTop" alt="article" />
+              <div class="card-body">
+                <p class="card-text pt-2 fw-bold text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                <p class="text-muted smallText">5 min read</p>
+                <div class="d-flex align-items-center authorDiv">
+                  <i class="bi bi-person-circle me-2 text-muted"></i>
+                  <ul class="list-unstyled mt-3">
+                    <li class="text-black">John Doe</li>
+                    <li class="text-muted">Jan 01, 2022</li>
+                  </ul>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col mt-4">
+            <a class="card border text-decoration-none" href="#">
+              <img src="https://cdn.pixabay.com/photo/2020/07/13/07/50/vpn-5399873__340.jpg" class="roundedTop" alt="article" />
+              <div class="card-body">
+                <p class="card-text pt-2 fw-bold text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                <p class="text-muted smallText">5 min read</p>
+                <div class="d-flex align-items-center authorDiv">
+                  <i class="bi bi-person-circle me-2 text-muted"></i>
+                  <ul class="list-unstyled mt-3">
+                    <li class="text-black">John Doe</li>
+                    <li class="text-muted">Jan 01, 2022</li>
+                  </ul>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col mt-4">
+            <a class="card border text-decoration-none" href="#">
+              <img src="https://cdn.pixabay.com/photo/2020/07/13/07/50/vpn-5399873__340.jpg" class="roundedTop" alt="article" />
+              <div class="card-body">
+                <p class="card-text pt-2 fw-bold text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                <p class="text-muted smallText">5 min read</p>
+                <div class="d-flex align-items-center authorDiv">
+                  <i class="bi bi-person-circle me-2 text-muted"></i>
+                  <ul class="list-unstyled mt-3">
+                    <li class="text-black">John Doe</li>
+                    <li class="text-muted">Jan 01, 2022</li>
+                  </ul>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col mt-4">
+            <a class="card border text-decoration-none" href="#">
+              <img src="https://cdn.pixabay.com/photo/2020/07/13/07/50/vpn-5399873__340.jpg" class="roundedTop" alt="article" />
+              <div class="card-body">
+                <p class="card-text pt-2 fw-bold text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                <p class="text-muted smallText">5 min read</p>
+                <div class="d-flex align-items-center authorDiv">
+                  <i class="bi bi-person-circle me-2 text-muted"></i>
+                  <ul class="list-unstyled mt-3">
+                    <li class="text-black">John Doe</li>
+                    <li class="text-muted">Jan 01, 2022</li>
+                  </ul>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col mt-4">
+            <a class="card border text-decoration-none" href="#">
+              <img src="https://cdn.pixabay.com/photo/2020/07/13/07/50/vpn-5399873__340.jpg" class="roundedTop" alt="article" />
+              <div class="card-body">
+                <p class="card-text pt-2 fw-bold text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                <p class="text-muted smallText">5 min read</p>
+                <div class="d-flex align-items-center authorDiv">
+                  <i class="bi bi-person-circle me-2 text-muted"></i>
+                  <ul class="list-unstyled mt-3">
+                    <li class="text-black">John Doe</li>
+                    <li class="text-muted">Jan 01, 2022</li>
+                  </ul>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- most recent-cards end -->
+      </div>
+
+      <!-- footer start -->
+      <div class="container-fluid footerCon text-white-50">
+        <footer class="py-5">
+          <div class="row justify-content-center">
+            <div class="col-2">
+              <h6>SIMPLE VPN</h6>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">About Us</a></li>
+                <li class="nav-item mb-2"><a href="./pricing.html" class="nav-link p-0 text-white">Plans & Pricing</a></li>
+                <li class="nav-item mb-2"><a href="./home.html" class="nav-link p-0 text-white">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Careers</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Free Trial</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Routers</a></li>
+                <li class="nav-item mb-2"><a href="./referFriend.html" class="nav-link p-0 text-white">Refer a Friend</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Become a Partner</a></li>
+              </ul>
+            </div>
+
+            <div class="col-2">
+              <h6>VPN APPS</h6>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Windows</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">macOS</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">iOS</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Linux</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Chrome</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Firefox</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Edge</a></li>
+              </ul>
+            </div>
+
+            <div class="col-2">
+              <h6>LEARN MORE</h6>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Reviews</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Press</a></li>
+                <li class="nav-item mb-2"><a href="./blog.html" class="nav-link p-0 text-white">Blog</a></li>
+                <li class="nav-item mb-2"><a href="./whatIsVPN.html" class="nav-link p-0 text-white">What is a VPN?</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Top 5 VPN Uses</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">How-To Privacy Guides</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Digital Security Lab</a></li>
+              </ul>
+            </div>
+
+            <div class="col-2">
+              <h6>TOOLS</h6>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">What is my IP?</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">DNS Leak Test</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">WebRTC Leak Test</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Password Generator</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Log4j Vulnerability (VPN Protection)</a></li>
+              </ul>
+            </div>
+
+            <div class="col-2">
+              <h6>HELP</h6>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="./supportCenter.html" class="nav-link p-0 text-white">Support Center</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Tutorials</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">FAQ</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Privacy Policy</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Terms of Service</a></li>
+                <li class="nav-item mb-2"><a href="./contactUs.html" class="nav-link p-0 text-white">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-between py-4 mt-5 border-top footerBottom">
+            <p class="fw-light">&copy; 2022 SimpleVPN. All rights reserved.</p>
+            <ul class="list-unstyled d-flex">
+              <li class="ms-3">
+                <a href="https://twitter.com" target="blank">
+                  <i class="bi bi-twitter"></i>
+                </a>
+              </li>
+              <li class="ms-3">
+                <a href="https://instagram.com" target="blank">
+                  <i class="bi bi-instagram"></i>
+                </a>
+              </li>
+              <li class="ms-3">
+                <a href="https://facebook.com" target="blank">
+                  <i class="bi bi-facebook"></i>
+                </a>
+              </li>
+              <li class="ms-3">
+                <a href="https://youtube.com" target="blank">
+                  <i class="bi bi-youtube"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+      <!-- footer end -->
+
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="/dist/index.js"></script>
+    <script src="/dist/js/index.js"></script>
+    <script src="/dist/js/blog.js"></script>
   </body>
 </html>

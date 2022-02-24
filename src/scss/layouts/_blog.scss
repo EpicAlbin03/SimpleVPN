@@ -1,1 +1,172 @@
 @use "../base/" as *;
+@use "../components/" as *;
+
+.blogCon {
+  .topics {
+    margin-top: $marginNav + 25px !important;
+    overflow-x: auto;
+    margin-left: 12px !important;
+    margin-right: 9px !important;
+
+    li {
+      flex-shrink: 0;
+      height: 100%;
+    }
+
+    a,
+    .bi {
+      text-decoration: none;
+      font-weight: 500;
+
+      &:hover {
+        color: black !important;
+      }
+    }
+  }
+
+  .cardGroup {
+    .card {
+      border-radius: 20px;
+      box-shadow: 3px 3px rgb(51, 51, 51);
+
+      .roundedTop {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+      }
+
+      li,
+      .smallText {
+        font-size: 12px;
+        font-weight: 500;
+      }
+
+      .bi-person-circle {
+        font-size: 36px;
+        margin-top: 2px !important;
+      }
+
+      .authorDiv {
+        height: 36px;
+      }
+    }
+  }
+
+  .searchCon {
+    padding-left: 12px !important;
+    padding-right: 9px !important;
+
+    .form {
+      position: relative;
+    }
+
+    .form .bi-search {
+      position: absolute;
+      top: 17px;
+      left: 18px;
+      color: #9ca3af;
+    }
+
+    .form span {
+      position: absolute;
+      right: 15px;
+      top: 13px;
+      padding: 2px;
+      border-left: 1px solid #d1d5db;
+    }
+
+    .left-pan {
+      padding-left: 7px;
+    }
+
+    .left-pan i {
+      padding-left: 10px;
+    }
+
+    .form-input {
+      height: 55px;
+      text-indent: 33px;
+      border-radius: 10px;
+      box-shadow: none;
+      border: none;
+    }
+
+    .col-md-6 {
+      h1 {
+        width: fit-content;
+      }
+    }
+
+    .autocomplete {
+      /*the container must be positioned relative:*/
+      position: relative;
+      display: inline-block;
+    }
+
+    input {
+      border: 1px solid transparent;
+      background-color: #f1f1f1;
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    input[type="text"] {
+      background-color: #f1f1f1;
+      width: 100%;
+    }
+
+    input[type="submit"] {
+      background-color: $primary;
+      color: #fff;
+    }
+
+    .autocomplete-items {
+      position: absolute;
+      border: 1px solid #d4d4d4;
+      border-bottom: none;
+      border-top: none;
+      z-index: 99;
+      /*position the autocomplete items to be the same width as the container:*/
+      top: 100%;
+      left: 0;
+      right: 0;
+      border-radius: 10px;
+      background-color: white;
+    }
+
+    .autocomplete-items div {
+      padding: 10px;
+      cursor: pointer;
+      background-color: #fff;
+      border-bottom: 1px solid #d4d4d4;
+      border-radius: 10px;
+    }
+
+    .autocomplete-items div:hover {
+      /*when hovering an item:*/
+      background-color: #e9e9e9;
+    }
+
+    .autocomplete-active {
+      /*when navigating through the items using the arrow keys:*/
+      background-color: $primary !important;
+      color: #ffffff;
+    }
+  }
+
+   // 575.98px
+   @media (max-width: $sm) {
+    .searchCon {
+      width: 90%;
+      padding: 0 !important;
+      margin: auto !important;
+    }
+  }
+
+  @media (max-width: 310px) {
+    .cardGroup {
+      .col2 {
+        margin-top: 21px !important;
+      }
+    }
+  }
+}
