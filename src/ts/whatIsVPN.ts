@@ -11,13 +11,25 @@ for (let i = 0; i < reveal.length; i++) {
         if (j !== i) {
           revealText[j].classList.add("d-none");
           reveal[j].setAttribute("style", "border-color: #DEE2E6 !important");
-          reveal[j].children[0].setAttribute("style", "color: #6c757d !important");
+          reveal[j].children[0].setAttribute("style", "color: #6C757D !important");
         }
       }
     } else {
       revealText[i].classList.add("d-none");
       reveal[i].setAttribute("style", "border-color: #DEE2E6 !important");
-      reveal[i].children[0].setAttribute("style", "color: #6c757d !important");
+      reveal[i].children[0].setAttribute("style", "color: #6C757D !important");
+    }
+  });
+
+  reveal[i].addEventListener("mouseover", function () {
+    reveal[i].setAttribute("style", "border-color: #1879c0 !important");
+    reveal[i].children[0].setAttribute("style", "color: black !important");
+  });
+
+  reveal[i].addEventListener("mouseout", function () {
+    if (revealText[i].classList.contains("d-none")) {
+      reveal[i].setAttribute("style", "border-color: #DEE2E6 !important");
+      reveal[i].children[0].setAttribute("style", "color: #6C757D !important");
     }
   });
 }

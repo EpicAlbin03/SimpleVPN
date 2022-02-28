@@ -11378,18 +11378,27 @@ textarea.form-control-lg {
 }
 .whatIsVPNCon .hero {
   max-width: 1000px;
-  margin-top: 84px;
+}
+.whatIsVPNCon .heroTop {
+  margin-top: 126px;
 }
 .whatIsVPNCon .infoCon .border-start:hover {
-  border-color: #1879c0 !important;
   cursor: pointer;
 }
-.whatIsVPNCon .infoCon .border-start:hover h2 {
-  color: black !important;
+.whatIsVPNCon .bulletDiv {
+  margin: 0 165px 0 165px;
+}
+.whatIsVPNCon .bulletDiv ol > li::marker {
+  font-weight: bold;
 }
 @media (max-width: 767.98px) {
   .whatIsVPNCon .imgCon {
     margin: auto;
+  }
+}
+@media (max-width: 575.98px) {
+  .whatIsVPNCon .bulletDiv {
+    width: 95%;
   }
 }
 

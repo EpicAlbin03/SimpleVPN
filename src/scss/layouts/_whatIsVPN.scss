@@ -4,17 +4,23 @@
 .whatIsVPNCon {
   .hero {
     max-width: 1000px;
-    margin-top: $marginNav;
+  }
+
+  .heroTop {
+    margin-top: $marginNav * 1.5;
   }
 
   .infoCon {
     .border-start:hover {
-      border-color: $primary !important;
       cursor: pointer;
+    }
+  }
 
-      h2 {
-        color: black !important;
-      }
+  .bulletDiv {
+    margin: 0 165px 0 165px;
+
+    ol > li::marker {
+      font-weight: bold;
     }
   }
 
@@ -22,6 +28,13 @@
   @media (max-width: $md) {
     .imgCon {
       margin: auto;
+    }
+  }
+
+  // 575.98px
+  @media (max-width: $sm) {
+    .bulletDiv {
+      width: 95%;
     }
   }
 }
