@@ -11376,5 +11376,21 @@ textarea.form-control-lg {
     width: auto;
   }
 }
+.whatIsVPNCon .hero {
+  max-width: 1000px;
+  margin-top: 84px;
+}
+.whatIsVPNCon .infoCon .border-start:hover {
+  border-color: #1879c0 !important;
+  cursor: pointer;
+}
+.whatIsVPNCon .infoCon .border-start:hover h2 {
+  color: black !important;
+}
+@media (max-width: 767.98px) {
+  .whatIsVPNCon .imgCon {
+    margin: auto;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
