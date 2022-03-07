@@ -10937,6 +10937,9 @@ textarea.form-control-lg {
   font-size: small;
   font-weight: 500;
 }
+.checkoutCon .dropdown-menu .btn {
+  width: fit-content;
+}
 .checkoutCon .dropdown .btnDropdown.active.focus,
 .checkoutCon .dropdown .btnDropdown.active:focus,
 .checkoutCon .dropdown .btnDropdown.focus,
@@ -10966,6 +10969,9 @@ textarea.form-control-lg {
   }
   .checkoutCon .dropdown-menu .d-flex {
     flex-direction: column;
+  }
+  .checkoutCon .dropdown-menu .btn {
+    width: 100% !important;
   }
 }
 

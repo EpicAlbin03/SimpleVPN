@@ -29,6 +29,12 @@
     font-weight: 500;
   }
 
+  .dropdown-menu {
+    .btn {
+      width: fit-content;
+    }
+  }
+
   .dropdown {
     .btnDropdown.active.focus,
     .btnDropdown.active:focus,
@@ -77,6 +83,10 @@
 
       .d-flex {
         flex-direction: column;
+      }
+
+      .btn {
+        width: 100% !important;
       }
     }
   }
