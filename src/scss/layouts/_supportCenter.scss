@@ -135,14 +135,6 @@
     }
   }
 
-  // 1399.98px
-  @media (max-width: $xxl) {
-  }
-
-  // 1199.98px
-  @media (max-width: $xl) {
-  }
-
   //991.98px
   @media (max-width: $lg) {
     .bubbleCon {
@@ -166,9 +158,5 @@
     .col-md-6 {
       width: auto;
     }
-  }
-
-  // 575.98px
-  @media (max-width: $sm) {
   }
 }

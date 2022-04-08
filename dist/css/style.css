@@ -10686,7 +10686,7 @@ textarea.form-control-lg {
   font-size: small;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
   .footerCon .row {
     flex-direction: column;
   }
@@ -10752,17 +10752,17 @@ textarea.form-control-lg {
   line-height: 50px;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1399.98px) {
   .customNav {
     width: 85%;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199.98px) {
   .customNav {
     width: 95%;
   }
 }
-@media (max-width: 992px) {
+@media (max-width: 991.98px) {
   .customNav .navHide {
     display: none;
   }
@@ -10770,7 +10770,7 @@ textarea.form-control-lg {
     display: block;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 575.98px) {
   .customNav .user,
 .customNav .btn {
     display: none;
@@ -11382,6 +11382,7 @@ textarea.form-control-lg {
     width: auto;
   }
 }
+
 .whatIsVPNCon .hero {
   max-width: 1000px;
 }

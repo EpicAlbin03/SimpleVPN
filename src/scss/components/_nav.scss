@@ -65,20 +65,22 @@ $marginNav: 84px;
   line-height: $navLineHeight;
 }
 
-// breakpoints start
-@media (max-width: 1400px) {
+// 1399.98px
+@media (max-width: $xxl) {
   .customNav {
     width: 85%;
   }
 }
 
-@media (max-width: 1200px) {
+// 1199.98px
+@media (max-width: $xl) {
   .customNav {
     width: 95%;
   }
 }
 
-@media (max-width: 992px) {
+// 991.98px
+@media (max-width: $lg) {
   .customNav {
     .navHide {
       display: none;
@@ -90,10 +92,8 @@ $marginNav: 84px;
   }
 }
 
-@media (max-width: 768px) {
-}
-
-@media (max-width: 576px) {
+// 575.98px
+@media (max-width: $sm) {
   .customNav {
     .user,
     .btn {

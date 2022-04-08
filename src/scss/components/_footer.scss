@@ -1,3 +1,5 @@
+@use "../base/" as *;
+
 .footerCon {
   background-color: #151922;
   font-size: 0.9rem;
@@ -22,17 +24,8 @@
   }
 }
 
-// breakpoints start
-@media (max-width: 1400px) {
-}
-
-@media (max-width: 1200px) {
-}
-
-@media (max-width: 992px) {
-}
-
-@media (max-width: 768px) {
+// 767.98px
+@media (max-width: $md) {
   .footerCon {
     .row {
       flex-direction: column;
@@ -50,7 +43,4 @@
       flex-direction: column;
     }
   }
-}
-
-@media (max-width: 576px) {
 }

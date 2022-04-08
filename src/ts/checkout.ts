@@ -298,8 +298,6 @@ function expiryDateIsValid(date: string) {
   today = new Date();
   someday = new Date();
   someday.setFullYear(parseInt(exYear), parseInt(exMonth), 1);
-  console.log(today);
-  console.log(someday);
 
   if (someday < today) return false;
   else return true;
